@@ -1,40 +1,17 @@
-import Counter from "./components/Counter";
-import logo from "./assets/logo.svg";
+import React from "react";
+import ApiDataManager from "./services/api/ApiDataManager";
+import Card from "./components/card/card";
 
 import "./App.css";
 
 function App() {
+  const apiManager = ApiDataManager();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Coucou</p>
-
-        <Counter />
-
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {" | "}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+    // **************Component Card**************
+    <div className="container">
+      {apiManager.recipesData.map((data) => (
+        <Card key={data.recipe.label} data={data.recipe} />
+      ))}
     </div>
   );
 }
