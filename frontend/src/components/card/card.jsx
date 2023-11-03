@@ -4,6 +4,17 @@ import PropTypes from "prop-types";
 import "./card.scss";
 
 function Card({ data }) {
+  const RefactorTitle = (inputString) => {
+    const result = inputString.replace("Recipe", "").replace("recipes", "");
+
+    if (result.includes(":")) {
+      const indexOfFirst = result.indexOf(":") + 2;
+      return result.slice(indexOfFirst);
+    }
+
+    return result;
+  };
+
   return (
     <div className="Contain">
       <div className="border-style">
@@ -11,7 +22,7 @@ function Card({ data }) {
           <img src={data.image} alt={data.label} />
         </div>
         <div className="title">
-          <h3>{data.label}</h3>
+          <h3>{RefactorTitle(data.label)}</h3>
         </div>
         <div className="block-info">
           <div>{data.totalTime} min</div>
