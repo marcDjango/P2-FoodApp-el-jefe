@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import RefactorTitle from "../utils";
-// import style card
 import "./card.scss";
 
 function Card({ data }) {
