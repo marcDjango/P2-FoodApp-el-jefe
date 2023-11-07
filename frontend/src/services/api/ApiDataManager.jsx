@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 function ApiDataManager(apiOptions) {
   const apiId = import.meta.env.VITE_EDAMAN_API_ID;
   const apiKey = import.meta.env.VITE_EDAMAN_API_KEY;
+  console.info(apiId, apiKey);
 
   const [recipesData, setRecipesData] = useState([]);
   const { cuisineType = "french", mealType = "Dinner" } = apiOptions;
