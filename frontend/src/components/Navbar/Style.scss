@@ -1,0 +1,67 @@
+nav {
+  // position: fixed;
+  display: flex;
+  background-color: #fff9f3;
+  width: 95%;
+  justify-content: space-between;
+
+  button {
+    border: none;
+    background: none;
+  }
+  .NavbarO {
+    display: none;
+  }
+  .Logo {
+    max-width: 110px;
+    max-height: 35px;
+  }
+  .MenuBurgall {
+    padding-block: 10px;
+    text-align: right;
+
+    .Listcat a {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      padding-inline: 5px;
+      text-decoration: none;
+      color: black;
+    }
+    .NavCat {
+      list-style: none;
+    }
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (min-width: 600px) {
+  nav {
+    background: rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(2px);
+
+    li {
+      list-style: none;
+    }
+    .NavbarO {
+      display: flex;
+      div {
+        margin-inline: 4px;
+
+        .Catedest {
+          display: flex;
+          text-align: right;
+          .Catesolo {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+    .MenuBurgall {
+      display: none;
+    }
+  }
+}
