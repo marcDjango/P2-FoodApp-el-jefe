@@ -26,8 +26,13 @@ nav {
       flex-direction: column;
       text-align: right;
       padding-inline: 5px;
+      padding-block: 2px;
       text-decoration: none;
       color: black;
+    }
+    .Listcat li {
+      font-size: 12px;
+      padding-block: 0px;
     }
     .NavCat {
       list-style: none;

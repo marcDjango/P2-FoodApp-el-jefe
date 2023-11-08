@@ -48,7 +48,7 @@ function Navbar() {
                   <Link to="/thinkabout">Think about</Link>
                 </div>
               ) : (
-                <div>
+                <div className="Listcat">
                   <button
                     className="CatButton"
                     type="button"
