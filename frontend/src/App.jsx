@@ -11,7 +11,6 @@ function App() {
       <main>
         <Outlet />
       </main>
-      <div>heloo</div>
     </>
   );
 }
