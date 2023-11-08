@@ -1,5 +1,11 @@
+import AllCards from "../components/AllCards/AllCards";
+
 function Home() {
-  return <div>Comming soon</div>;
+  return (
+    <div>
+      <AllCards />
+    </div>
+  );
 }
 
 export default Home;
