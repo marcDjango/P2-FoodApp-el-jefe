@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import RefactorTitle from "../utils";
+import nutriscoreA from "../../assets/images/nutri-score-a.png";
 import "./card.scss";
 
 function Card({ data }) {
@@ -14,7 +15,9 @@ function Card({ data }) {
         </div>
         <div className="block-info">
           <div className="block-time">{data.totalTime} min</div>
-          <div className="block-picture" />
+          <div className="block-picture">
+            <img src={nutriscoreA} alt="" />
+          </div>
         </div>
       </div>
     </div>
