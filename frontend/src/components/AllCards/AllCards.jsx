@@ -4,10 +4,10 @@ import SelectCategory from "../SelectCategory/SelectCategory";
 export default function AllCards() {
   return (
     <>
-      <SelectCategory Category="french" />
-      <SelectCategory Category="italian" />
-      <SelectCategory Category="american" />
-      <SelectCategory Category="japanese" />
+      <SelectCategory category="french" />
+      <SelectCategory category="italian" />
+      <SelectCategory category="american" />
+      <SelectCategory category="japanese" />
     </>
   );
 }
