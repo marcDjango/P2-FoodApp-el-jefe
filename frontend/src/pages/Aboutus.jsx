@@ -1,7 +1,5 @@
-import Abus from "../components/Aboutust/Aboutust";
-
 function Aboutus() {
-  return <Abus />;
+  return <div>Comming soon</div>;
 }
 
 export default Aboutus;

@@ -1,5 +1,5 @@
 nav {
-  // position: fixed;
+  position: fixed;
   display: flex;
   background-color: #fff9f3;
   width: 95%;
@@ -8,6 +8,7 @@ nav {
   button {
     border: none;
     background: none;
+    font: inherit;
   }
   .NavbarO {
     display: none;
@@ -54,8 +55,19 @@ a {
         .Catedest {
           display: flex;
           text-align: right;
+          font-size: clamp(18px, 2vw, 28px);
+          button {
+            font-size: clamp(18px, 2vw, 28px);
+          }
+
           .Catesolo {
             margin-right: 0px;
+            li {
+              font-size: clamp(14px, 1.5vw, 20px);
+            }
+          }
+          a {
+            margin-left: 5px;
           }
         }
       }

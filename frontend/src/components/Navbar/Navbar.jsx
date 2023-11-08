@@ -8,7 +8,7 @@ import logo from "../../assets/logo.svg";
 function Navbar() {
   const [hamburOpen, setHamberOpen] = useState(false);
 
-  const toggleHambur = () => {
+  const toggleHamburger = () => {
     setHamberOpen(!hamburOpen);
   };
   const [isCategoriOpen, setIsCategoriOpen] = useState(true);
@@ -19,12 +19,13 @@ function Navbar() {
 
   return (
     <nav className="NavbarM">
-      <img src={logo} className="Logo" alt="Logo" />
-
+      <Link to="/">
+        <img src={logo} className="Logo" alt="Logo" />
+      </Link>
       <div className="MenuBurgall">
         {hamburOpen ? (
           <>
-            <button type="button" onClick={toggleHambur}>
+            <button type="button" onClick={toggleHamburger}>
               <img
                 src={croixBurger}
                 className={`MenuBurgerF ${hamburOpen && "open"}`}
@@ -43,8 +44,8 @@ function Navbar() {
                     Catégorie
                   </button>
                   <Link to="/aboutus">About Us</Link>
-                  <Link to="/">Nutri-score</Link>
-                  <Link to="/aboutus">Think about</Link>
+                  <Link to="/nutriscore">Nutri-score</Link>
+                  <Link to="/thinkabout">Think about</Link>
                 </div>
               ) : (
                 <div>
@@ -56,22 +57,31 @@ function Navbar() {
                     Catégorie
                   </button>
                   <ul className="NavCat">
-                    <li>France</li>
-                    <li>Italy</li>
-                    <li>Spain</li>
-                    <li>Romania</li>
-                    <li>China</li>
-                    <li>Japan</li>
+                    <li>
+                      <Link to="/categorie">Breackfast</Link>
+                    </li>
+                    <li>
+                      <Link to="/categorie">Brunch</Link>
+                    </li>
+                    <li>
+                      <Link to="/categorie">Dinner</Link>
+                    </li>
+                    <li>
+                      <Link to="/categorie">Snack</Link>
+                    </li>
+                    <li>
+                      <Link to="/categorie">Teatime</Link>
+                    </li>
                   </ul>
                   <Link to="/aboutus">About Us</Link>
-                  <Link to="/">Nutri-score</Link>
-                  <Link to="/aboutus">Think about</Link>
+                  <Link to="/nutriscore">Nutri-score</Link>
+                  <Link to="/thinkabout">Think about</Link>
                 </div>
               )}
             </div>
           </>
         ) : (
-          <button type="button" onClick={toggleHambur}>
+          <button type="button" onClick={toggleHamburger}>
             <img src={burger} className="MenuBurgero" alt="Burger menu" />
           </button>
         )}
@@ -88,8 +98,8 @@ function Navbar() {
                 Catégorie
               </button>
               <Link to="/aboutus">About Us</Link>
-              <Link to="/">Nutri-score</Link>
-              <Link to="/aboutus">Think about</Link>
+              <Link to="/nutriscore">Nutri-score</Link>
+              <Link to="/thinkabout">Think about</Link>
             </div>
           ) : (
             <div className="Catedest">
@@ -102,17 +112,26 @@ function Navbar() {
                   Catégorie
                 </button>
                 <ul className="NavCat">
-                  <li>France</li>
-                  <li>Italy</li>
-                  <li>Spain</li>
-                  <li>Romania</li>
-                  <li>China</li>
-                  <li>Japan</li>
+                  <li>
+                    <Link to="/categorie">Breackfast</Link>
+                  </li>
+                  <li>
+                    <Link to="/categorie">Brunch</Link>
+                  </li>
+                  <li>
+                    <Link to="/categorie">Dinner</Link>
+                  </li>
+                  <li>
+                    <Link to="/categorie">Snack</Link>
+                  </li>
+                  <li>
+                    <Link to="/categorie">Teatime</Link>
+                  </li>
                 </ul>
               </div>
               <Link to="/aboutus">About Us</Link>
-              <Link to="/">Nutri-score</Link>
-              <Link to="/aboutus">Think about</Link>
+              <Link to="/nutriscore">Nutri-score</Link>
+              <Link to="/thinkabout">Think about</Link>
             </div>
           )}
         </div>

@@ -1,7 +1,5 @@
-import Homt from "../components/Homet/Homet";
-
 function Home() {
-  return <Homt />;
+  return <div>Comming soon</div>;
 }
 
 export default Home;
