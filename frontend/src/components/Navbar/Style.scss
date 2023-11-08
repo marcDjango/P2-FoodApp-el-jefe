@@ -1,8 +1,9 @@
 nav {
+  z-index: 2;
   position: fixed;
   display: flex;
   background-color: #fff9f3;
-  width: 95%;
+  width: 100%;
   justify-content: space-between;
 
   button {
@@ -16,16 +17,17 @@ nav {
   .Logo {
     max-width: 110px;
     max-height: 35px;
+    filter: sepia(25%);
   }
   .MenuBurgall {
     padding-block: 10px;
     text-align: right;
+    padding-right: 8px;
 
     .Listcat a {
       display: flex;
       flex-direction: column;
       text-align: right;
-      padding-inline: 5px;
       padding-block: 2px;
       text-decoration: none;
       color: black;
@@ -44,6 +46,14 @@ a {
   color: black;
 }
 @media screen and (min-width: 600px) {
+  a {
+    color: white;
+  }
+  .CatButton {
+    color: white;
+  }
+  .Logo {
+  }
   nav {
     background: rgba(255, 255, 255, 0.05);
 
@@ -54,6 +64,7 @@ a {
     }
     .NavbarO {
       display: flex;
+      color: white;
       div {
         margin-inline: 4px;
 
@@ -69,6 +80,7 @@ a {
             margin-right: 0px;
             li {
               font-size: clamp(14px, 1.5vw, 20px);
+              color: white;
             }
           }
           a {
