@@ -1,0 +1,14 @@
+.container_carousel {
+  scrollbar-width: none; /* Firefox 64 */
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.container_body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

@@ -37,19 +37,19 @@ function DesktopNav() {
               </button>
               <ul className="NavCat">
                 <li>
-                  <Link to="/category">Breakfast</Link>
+                  <Link to="/category/Breakfast">Breakfast</Link>
                 </li>
                 <li>
-                  <Link to="/category">Brunch</Link>
+                  <Link to="/category/Brunch">Brunch</Link>
                 </li>
                 <li>
-                  <Link to="/category">Dinner</Link>
+                  <Link to="/category/Dinner">Dinner</Link>
                 </li>
                 <li>
-                  <Link to="/category">Snack</Link>
+                  <Link to="/category/Snack">Snack</Link>
                 </li>
                 <li>
-                  <Link to="/category">Teatime</Link>
+                  <Link to="/category/Teatime">Teatime</Link>
                 </li>
               </ul>
             </div>
