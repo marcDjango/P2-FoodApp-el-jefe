@@ -3,7 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 :root {
   --primary-color: #dfaa49;
   --border-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.planche {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
 }

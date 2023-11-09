@@ -1,16 +1,18 @@
+import { Outlet } from "react-router-dom";
 import React from "react";
-// import AllCards from "./components/AllCards/AllCards";
-// import OneCategory from "./components/OneCategory/OneCategory";
-import FilterCategory from "./components/FilterCategory/FilterCategory";
+import Navbar from "./components/Navbar/Navbar";
+import planche from "./assets/images/Planchedecoup.jpg";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      <FilterCategory />
-      {/* <OneCategory category="italian" carousel={false} />
-      <AllCards /> */}
+      <Navbar />
+      <img src={planche} className="planche" alt="Planche à découper" />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }

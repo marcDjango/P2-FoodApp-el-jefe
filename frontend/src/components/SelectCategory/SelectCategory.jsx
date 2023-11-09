@@ -2,13 +2,22 @@ import PropTypes from "prop-types";
 import ApiDataManager from "../../services/api/ApiDataManager";
 import Card from "../card/card";
 import { toUpperCaseFirstLetter } from "../utils";
+import "./SelectCategory.css";
 
-export default function SelectCategory({ category, carousel = true }) {
-  const apiDataCategory = ApiDataManager({ cuisineType: category });
+export default function SelectCategory({
+  category,
+  mealType,
+  carousel = true,
+}) {
+  const apiDataCategory = ApiDataManager({ cuisineType: category, mealType });
 
   return (
     <>
-      <h2>{toUpperCaseFirstLetter(category)} Foods</h2>
+      <h2>
+        {mealType
+          ? toUpperCaseFirstLetter(mealType)
+          : `${toUpperCaseFirstLetter(category)} Food`}
+      </h2>
       <div className={carousel ? "container_carousel" : "container_body"}>
         {apiDataCategory.recipesData &&
           apiDataCategory.recipesData.map((data) => (
@@ -20,5 +29,6 @@ export default function SelectCategory({ category, carousel = true }) {
 }
 SelectCategory.propTypes = {
   category: PropTypes.string.isRequired,
+  mealType: PropTypes.string.isRequired,
   carousel: PropTypes.bool.isRequired,
 };

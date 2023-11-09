@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 
-function ApiDataManager(apiOptions) {
+function ApiDataManager({ cuisineType = "french", mealType = "Dinner" }) {
   const apiId = import.meta.env.VITE_EDAMAN_API_ID;
   const apiKey = import.meta.env.VITE_EDAMAN_API_KEY;
 
   const [recipesData, setRecipesData] = useState([]);
-  const { cuisineType = "french", mealType = "Dinner" } = apiOptions;
 
   const apiUrlEndpoint = `https://api.edamam.com/api/recipes/v2?q=&app_id=${apiId}&app_key=${apiKey}&type=public`;
   const apiUrlOptions = `&ingr=10-18&cuisineType=${cuisineType}&mealType=${mealType}&time=5%2B`;
