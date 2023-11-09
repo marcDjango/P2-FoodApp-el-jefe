@@ -1,5 +1,5 @@
-function Aboutus() {
-  return <div>Comming soon</div>;
+function AboutUs() {
+  return <div>Coming soon</div>;
 }
 
-export default Aboutus;
+export default AboutUs;

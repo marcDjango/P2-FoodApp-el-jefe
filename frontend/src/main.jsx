@@ -5,9 +5,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import Home from "./pages/Home";
-import Aboutus from "./pages/Aboutus";
-import Thinkabout from "./pages/Thinkabout";
-import Categorie from "./pages/Categorie";
+import AboutUs from "./pages/Aboutus";
+import ThinkAbout from "./pages/Thinkabout";
+import Category from "./pages/Category";
 import Nutriscore from "./pages/Nutriscore";
 
 const router = createBrowserRouter([
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/aboutus",
-        element: <Aboutus />,
+        element: <AboutUs />,
       },
       {
         path: "/nutriscore",
@@ -29,11 +29,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/thinkabout",
-        element: <Thinkabout />,
+        element: <ThinkAbout />,
       },
       {
-        path: "/categorie",
-        element: <Categorie />,
+        path: "/category",
+        element: <Category />,
       },
     ],
   },

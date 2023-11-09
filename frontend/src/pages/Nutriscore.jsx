@@ -1,5 +1,5 @@
 function Nutriscore() {
-  return <div>Comming soon</div>;
+  return <div>Coming soon</div>;
 }
 
 export default Nutriscore;

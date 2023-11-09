@@ -1,5 +1,5 @@
-function Thinkabout() {
-  return <div>Comming soon</div>;
+function ThinkAbout() {
+  return <div>Coming soon</div>;
 }
 
-export default Thinkabout;
+export default ThinkAbout;
