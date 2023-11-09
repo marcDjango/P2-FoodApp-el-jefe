@@ -24,6 +24,7 @@
         border-radius: 20px;
         border: 3px solid var(--primary-color);
         box-shadow: var(--border-shadow);
+        cursor: pointer;
       }
     }
     .title {
@@ -116,8 +117,9 @@
       }
       .title {
         position: relative;
-        width: 300px;
         height: 110px;
+        width: 300px;
+        margin-top: 0.5rem;
         background-color: var(--primary-color);
 
         h3 {
