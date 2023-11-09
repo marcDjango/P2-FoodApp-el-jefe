@@ -1,7 +1,9 @@
+import AllCards from "../components/AllCards/AllCards";
+
 function Home() {
   return (
     <div>
-      <h1>HOME</h1>
+      <AllCards />
     </div>
   );
 }

@@ -12,9 +12,31 @@
   src: url("../../assets/fonts/Sanseriffic.otf");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 :root {
   --primary-color: #dfaa49;
+  --border-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --primary-font: "poppins", sans-serif;
   --secondary-font: "sansserif", sans-serif;
   --tertiary-font: "paperclip", sans-serif;
+}
+.container {
+  scrollbar-width: none;
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.planche {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
 }

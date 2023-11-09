@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import NutriScore from "./pages/NutriScore";
 import Tomorrow from "./pages/Tomorrow";
+import Category from "./pages/Category";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/tomorrow",
         element: <Tomorrow />,
+      },
+      {
+        path: "/category",
+        element: <Category />,
       },
     ],
   },
