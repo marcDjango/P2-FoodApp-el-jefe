@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "paperclip";
+  src: url("../../assets/fonts/PaperclipSansSerif.otf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("../../assets/fonts/Poppins-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "sansserif";
+  src: url("../../assets/fonts/Sanseriffic.otf");
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .vector2 img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-menu {
+    font-family: var(--primary-font);
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: clamp(1rem, 2vh, 5rem);
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      // gap: clamp(1rem, 4vw, 10rem);modifié
+      gap: 5vw;
+
+      #main-logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .networks-pages {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+
+        .icons-networks {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          gap: clamp(16px, 2vw, 72px);
+
+          #title-networks {
+            border: none;
+            padding: 0;
+            font-size: clamp(1.5rem, 2vw, 3rem);
+          }
+
+          div {
+            display: flex;
+            width: 100%;
+            height: auto;
+            padding: 0.5rem 1rem;
+            align-items: center;
+            gap: 1rem;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+
+            a {
+              color: #000;
+            }
+          }
+          div:hover {
+            transform: scale(1.1);
+            border: 3px solid antiquewhite;
+          }
+
+          button {
+            background: none;
+            border: initial;
+            cursor: pointer;
+          }
+        }
+
+        .pages-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: clamp(16px, 3vw, 80px);
+
+          .custom-link {
+            color: #000;
+            font-size: clamp(1.2rem, 3vw, 2.3rem);
+          }
+
+          .custom-link:hover {
+            transform: scale(1.2);
+            color: antiquewhite;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/*                                         MEDIA QUERIES                                         */
+/* --------------------------------------------------------------------------------------------- */
+
+// --------------------- MEDIA QUERIES 1230PX ---------------------
+@media screen and (max-width: 1230px) {
+  #main-logo img {
+    display: none;
+  }
+
+  #main-logo {
+    display: flex;
+    background-image: url("../../assets/logo-simple.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+// --------------------- MEDIA QUERIES 880PX ---------------------
+@media screen and (max-width: 880px) {
+  #main-logo {
+    width: clamp(10rem, 10vw, 20rem);
+  }
+
+  .main {
+    .footer-menu {
+      padding: 0.8rem;
+
+      .main-container {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        gap: 7vw;
+        margin: 0 auto;
+
+        #main-logo {
+          display: flex;
+          align-items: center;
+        }
+
+        .networks-pages {
+          width: auto;
+          gap: 1rem;
+
+          .icons-networks {
+            width: auto;
+            gap: 1.5rem;
+
+            div {
+              padding: 0;
+              gap: 0;
+              border: none;
+              border-radius: initial;
+              font-size: 0px;
+              img {
+                width: 60px;
+                height: auto;
+              }
+
+              a {
+                display: none;
+              }
+            }
+            div:hover {
+              transform: scale(1.2);
+              border: none;
+            }
+          }
+
+          .pages-container {
+            gap: clamp(16px, 3.5vw, 80px);
+
+            .custom-link {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// --------------------- MEDIA QUERIES 480PX ---------------------
+
+@media screen and (max-width: 480px) {
+  #main-logo {
+    width: clamp(10rem, 10vw, 20rem);
+  }
+
+  .main {
+    .footer-menu {
+      .main-container {
+        #main-logo {
+          display: none;
+          align-items: center;
+        }
+
+        .networks-pages {
+          align-items: center;
+          gap: 1.3rem;
+
+          .icons-networks {
+            #title-networks {
+              font-size: 1.2rem;
+            }
+
+            div {
+              img {
+                width: 50px;
+                height: auto;
+              }
+            }
+          }
+
+          .pages-container {
+            gap: 2rem;
+
+            .custom-link {
+              font-size: 1.3rem;
+              border: 1px solid black;
+              border-radius: 10px;
+              padding: 0.5rem 0.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
