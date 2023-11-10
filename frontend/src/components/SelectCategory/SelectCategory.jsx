@@ -14,9 +14,9 @@ export default function SelectCategory({
   return (
     <>
       <h2 className="title_filter">
-        {mealType
-          ? toUpperCaseFirstLetter(mealType)
-          : `${toUpperCaseFirstLetter(category)} Food`}
+        {carousel
+          ? `${toUpperCaseFirstLetter(category)} Food`
+          : toUpperCaseFirstLetter(mealType)}
       </h2>
       <div className={carousel ? "container_carousel" : "container_body"}>
         {apiDataCategory.recipesData &&

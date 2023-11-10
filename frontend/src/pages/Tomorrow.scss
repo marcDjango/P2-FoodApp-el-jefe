@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "paperclip";
+  src: url("../assets/fonts/PaperclipSansSerif.otf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("../assets/fonts/Poppins-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "sansserif";
+  src: url("../assets/fonts/Sanseriffic.otf");
+}
+
+.main-container-tomorrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20vh;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    width: 80%;
+
+    h1 {
+      color: #000;
+      font-family: var(--tertiary-font);
+      font-size: 120px;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+    }
+    p {
+      color: #000;
+      font-family: var(--primary-font);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 3rem;
+    }
+  }
+
+  .text-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 63px;
+    height: 100%;
+    width: 80%;
+
+    #pic {
+      width: auto;
+      height: 100%;
+      max-height: 100%;
+      img {
+        object-fit: cover;
+        width: 318px;
+        height: auto;
+
+        border-radius: 10px;
+      }
+    }
+
+    .paragraph {
+      display: flex;
+      width: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem;
+
+      h2 {
+        color: #000;
+        font-family: var(--tertiary-font);
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        width: 70%;
+      }
+
+      p {
+        color: #000;
+        font-family: var(--primary-font);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 3rem;
+      }
+    }
+  }
+
+  .conclusion {
+    color: #000;
+    font-family: var(--primary-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 48px;
+    width: 80%;
+  }
+}
