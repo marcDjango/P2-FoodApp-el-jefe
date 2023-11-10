@@ -1,0 +1,14 @@
+.CarouselDesktop {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
+  display: none;
+  padding-inline: 8px;
+}
+@media screen and (min-width: 600px) {
+  .CarouselMobile {
+    display: none;
+  }
+  .CarouselDesktop {
+    display: grid;
+  }
+}
