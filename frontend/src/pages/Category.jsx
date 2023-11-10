@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import OneCategory from "../components/OneCategory/OneCategory";
+import FilterCategory from "../components/FilterCategory/FilterCategory";
 
 function Category() {
   const { type } = useParams();
@@ -16,13 +17,16 @@ function Category() {
   }, [categoryParams]);
 
   return (
-    <div key={key}>
-      <OneCategory
-        category="french"
-        mealType={categoryParams}
-        carousel={false}
-      />
-    </div>
+    <>
+      <FilterCategory />
+      <div key={key}>
+        <OneCategory
+          category="french"
+          mealType={categoryParams}
+          carousel={false}
+        />
+      </div>
+    </>
   );
 }
 

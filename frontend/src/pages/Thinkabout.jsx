@@ -1,11 +1,5 @@
-import FilterCategory from "../components/FilterCategory/FilterCategory";
-
 function ThinkAbout() {
-  return (
-    <div>
-      <FilterCategory />
-    </div>
-  );
+  return <div>Coming soon</div>;
 }
 
 export default ThinkAbout;

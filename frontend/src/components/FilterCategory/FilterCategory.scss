@@ -4,14 +4,15 @@ ul {
   justify-content: space-evenly;
   background-color: var(--primary-color);
   padding-top: 1rem;
-}
-li {
-  list-style: none;
+  height: 60px;
+  li {
+    list-style: none;
 
-  img {
-    width: 100%;
-    min-height: 30px;
-    height: 50%;
+    img {
+      width: 100%;
+      min-height: 30px;
+      height: 50%;
+    }
   }
 }
 // li:nth-child(1) {
