@@ -1,4 +1,4 @@
-import { bkgFilter, iconFilter } from "../../services/importimages/images";
+import { iconFilter } from "../../services/importimages/images";
 import "./FilterCategory.scss";
 
 export default function FilterCategory() {
@@ -9,16 +9,16 @@ export default function FilterCategory() {
           <img src={iconFilter[0]} alt="" />
         </li>
         <li>
-          <img src={bkgFilter[1]} alt="" />
+          <img src={iconFilter[1]} alt="" />
         </li>
         <li>
-          <img src={bkgFilter[2]} alt="" />
+          <img src={iconFilter[2]} alt="" />
         </li>
         <li>
-          <img src={bkgFilter[3]} alt="" />
+          <img src={iconFilter[3]} alt="" />
         </li>
         <li>
-          <img src={bkgFilter[4]} alt="" />
+          <img src={iconFilter[4]} alt="" />
         </li>
       </ul>
     </div>

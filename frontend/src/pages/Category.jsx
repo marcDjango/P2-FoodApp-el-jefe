@@ -3,9 +3,9 @@ import { useParams } from "react-router-dom";
 import OneCategory from "../components/OneCategory/OneCategory";
 
 function Category() {
-  const [categoryParams, setCategoryParams] = useState("");
-  const [key, setKey] = useState(0);
   const { type } = useParams();
+  const [categoryParams, setCategoryParams] = useState(type);
+  const [key, setKey] = useState(0);
 
   useEffect(() => {
     setCategoryParams(type);
