@@ -13,7 +13,7 @@ export default function SelectCategory({
 
   return (
     <>
-      <h2>
+      <h2 className="title_filter">
         {mealType
           ? toUpperCaseFirstLetter(mealType)
           : `${toUpperCaseFirstLetter(category)} Food`}

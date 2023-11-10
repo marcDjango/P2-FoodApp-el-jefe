@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import OneCategory from "../components/OneCategory/OneCategory";
+import FilterCategory from "../components/FilterCategory/FilterCategory";
 
 function Category() {
-  const [categoryParams, setCategoryParams] = useState("");
-  const [key, setKey] = useState(0);
   const { type } = useParams();
+  const [categoryParams, setCategoryParams] = useState(type);
+  const [key, setKey] = useState(0);
 
   useEffect(() => {
     setCategoryParams(type);
@@ -16,13 +17,16 @@ function Category() {
   }, [categoryParams]);
 
   return (
-    <div key={key}>
-      <OneCategory
-        category="french"
-        mealType={categoryParams}
-        carousel={false}
-      />
-    </div>
+    <>
+      <FilterCategory />
+      <div key={key}>
+        <OneCategory
+          category="french"
+          mealType={categoryParams}
+          carousel={false}
+        />
+      </div>
+    </>
   );
 }
 
