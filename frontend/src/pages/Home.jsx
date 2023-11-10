@@ -1,9 +1,11 @@
-import AllCards from "../components/AllCards/AllCards";
+// import AllCards from "../components/AllCards/AllCards";
+import Carousel from "../components/Carousel/Carousel";
 
 function Home() {
   return (
     <div>
-      <AllCards />
+      <Carousel />
+      {/* <AllCards /> */}
     </div>
   );
 }
