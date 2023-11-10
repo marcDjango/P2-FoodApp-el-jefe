@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import planche from "./assets/images/Planchedecoup.jpg";
+import Footer from "./components/footer/Footer";
 
 import "./App.css";
 
@@ -13,6 +14,7 @@ function App() {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 }
