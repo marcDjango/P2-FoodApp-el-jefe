@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import ApiDataManager from "../../services/api/ApiDataManager";
+import knifeLeft from "../../assets/images/knifeLeft.svg";
+import knifeRight from "../../assets/images/knifeRight.svg";
 
 import "./CarouselCard.scss";
 
@@ -9,16 +11,27 @@ export default function CarouselSelect({ types }) {
   const [index, setIndex] = useState(0);
 
   const handleClickLess = () => {
-    setIndex(index - 1);
+    if (index === 0 && apiDatatypes.recipesData.length) {
+      setIndex(apiDatatypes.recipesData.length - 1);
+    } else {
+      setIndex(index - 1);
+    }
   };
   const handleClickMore = () => {
-    setIndex(index + 1);
+    if (
+      index === apiDatatypes.recipesData.length - 1 &&
+      apiDatatypes.recipesData.length
+    ) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+    }
   };
 
   return (
     <div className="blockCarousel">
       <button className="left" type="button" onClick={handleClickLess}>
-        next
+        <img src={knifeLeft} className="btnLeft" alt="Litle bouton" />
       </button>
       {apiDatatypes.recipesData.length && (
         <div className="picture">
@@ -30,7 +43,7 @@ export default function CarouselSelect({ types }) {
       )}
 
       <button className="right" type="button" onClick={handleClickMore}>
-        previous
+        <img src={knifeRight} className="btnRight" alt="Litle bouton" />
       </button>
     </div>
   );

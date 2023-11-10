@@ -10,7 +10,9 @@ function Carousel() {
         <CarouselSelect types="dinner" />
         <CarouselSelect types="teatime" />
       </div>
-      <div>ff</div>
+      <div className="CarouselMobile">
+        <CarouselSelect types="lunch" />
+      </div>
     </>
   );
 }
