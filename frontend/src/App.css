@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@font-face {
+  font-family: "Paperclip"; /* Nom de la police */
+  src: url("./assets/font/paperclip_sans_serif/PaperclipSansSerif.otf")
+    format("opentype"); /* Chemin vers le fichier OTF */
+}
 @font-face {
   font-family: "paperclip";
   src: url("../../assets/fonts/PaperclipSansSerif.otf");
