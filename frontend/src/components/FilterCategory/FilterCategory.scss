@@ -1,0 +1,12 @@
+ul {
+  display: flex;
+  flex-direction: row;
+}
+li:nth-child(1) {
+  z-index: 1;
+  background-image: url("../../assets/images/Ink1.svg");
+  background-size: contain;
+}
+img {
+  z-index: 99;
+}
