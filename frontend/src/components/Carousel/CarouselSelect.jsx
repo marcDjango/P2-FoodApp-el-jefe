@@ -11,7 +11,7 @@ export default function CarouselSelect({ types }) {
   const [index, setIndex] = useState(0);
 
   const handleClickLess = () => {
-    if (index === 0 && apiDatatypes.recipesData.length) {
+    if (apiDatatypes.recipesData.length && index === 0) {
       setIndex(apiDatatypes.recipesData.length - 1);
     } else {
       setIndex(index - 1);
@@ -19,8 +19,8 @@ export default function CarouselSelect({ types }) {
   };
   const handleClickMore = () => {
     if (
-      index === apiDatatypes.recipesData.length - 1 &&
-      apiDatatypes.recipesData.length
+      apiDatatypes.recipesData.length &&
+      index === apiDatatypes.recipesData.length - 1
     ) {
       setIndex(0);
     } else {
