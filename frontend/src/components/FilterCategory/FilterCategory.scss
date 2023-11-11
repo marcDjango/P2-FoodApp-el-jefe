@@ -1,9 +1,14 @@
 .filter-contain {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
   ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: var(--primary-color);
+    border-radius: 2rem;
     padding-top: 1rem;
     height: 60px;
     li {
@@ -11,8 +16,28 @@
 
       img {
         width: 100%;
-        min-height: 30px;
-        height: 50%;
+        height: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .filter-contain {
+    position: relative;
+    ul {
+      height: 100%;
+      border-radius: 0;
+      background-color: transparent;
+      li {
+        width: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 1.5rem;
+        img {
+          width: 80px;
+          height: 50%;
+        }
       }
     }
   }
