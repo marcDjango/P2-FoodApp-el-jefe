@@ -10,6 +10,7 @@ import AboutUs from "./pages/AboutUs";
 import NutriScore from "./pages/NutriScore";
 import Tomorrow from "./pages/Tomorrow";
 import Category from "./pages/Category";
+import RecipeDetail from "./pages/RecipeDetail";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/category/:type",
         element: <Category />,
+      },
+      {
+        path: "/RecipeDetail",
+        element: <RecipeDetail />,
       },
     ],
   },
