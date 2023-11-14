@@ -1,0 +1,46 @@
+.IngredientsMain {
+  position: relative;
+
+  .IngredientsTitle {
+    font: bold;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 130px;
+    margin-bottom: 16px;
+
+    .LiIngredient {
+      display: flex;
+      justify-content: space-between;
+      font-size: clamp(11px, 2.5vw, 14px);
+      li {
+        margin-top: 2px;
+        margin-bottom: 2px;
+      }
+      div {
+        display: flex;
+        li {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  .PersonneAdjust {
+    position: absolute;
+    display: flex;
+    top: 0%;
+    right: 3%;
+    background-color: #ffbc41;
+    border-radius: 25px;
+    box-shadow: 2px;
+    padding-block: 4px;
+    padding-inline: 4px;
+    div {
+      padding-inline: 4px;
+    }
+  }
+}

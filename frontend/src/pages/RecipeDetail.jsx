@@ -1,18 +1,23 @@
 import React from "react";
-import { useData } from "../services/Context";
+import "./RecipeDetail.scss";
+import Ingredients from "../components/DetailRecipe/Ingredient/Ingredient";
+import ImgPack from "../components/DetailRecipe/ImgPack/ImgPack";
+import Environment from "../components/DetailRecipe/Environment/Environment";
+import Nutrients from "../components/DetailRecipe/Nutrients/Nutrients";
+import StartRecipe from "../components/DetailRecipe/StartRecipe/StartRecipe";
 
 function Recipe() {
-  const { data } = useData();
-
   return (
-    <div>
-      <div>{data.label}</div>
-      <div>
-        <a href={data.url} target="_blank" rel="noreferrer">
-          Look the recipe !!
-        </a>
+    <div className="allDetail">
+      <ImgPack />
+      <div className="TexteMain">
+        <Ingredients />
+        <Environment />
       </div>
-      <img src={data.image} alt={data.label} />
+      <div className="DetailFoot">
+        <StartRecipe />
+        <Nutrients />
+      </div>
     </div>
   );
 }
