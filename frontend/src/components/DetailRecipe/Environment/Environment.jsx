@@ -8,12 +8,10 @@ function Environment() {
 
   return (
     <div className="Environment">
-      <div className="EnvironmentTitle">Impacte on the earth</div>
       <div className="EnvironmentImage">
-        <div className="EnvironmentTexte">
-          Note of the CO2 reject : {data.co2EmissionsClass}
-        </div>
-        <img src={Petitplante} alt="Yong green plant" />
+        <div className="EnvironmentTexte">CO² : {data.co2EmissionsClass}</div>
+
+        <img src={Petitplante} alt="Young green plant" />
       </div>
     </div>
   );

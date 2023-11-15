@@ -1,16 +1,41 @@
 .Environment {
-  .EnvironmentTitle {
-    font: bold;
-    font-size: 24px;
-  }
+  font-family: var(--primary-font);
   .EnvironmentImage {
     display: flex;
     justify-content: space-around;
+    margin-block: 18px;
 
     .EnvironmentTexte {
       padding-block: 8px;
-      font-size: clamp(14px, 3vw, 18px);
+      font-size: clamp(24px, 3vw, 28px);
       margin: auto;
+      padding-right: 12px;
+    }
+    img {
+      margin-right: 24px;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .Environment {
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+
+    .EnvironmentImage {
+      justify-content: center;
+      align-items: center;
+      border: 2px solid;
+      max-width: 250px;
+      border-radius: 10px;
+      height: 96px;
+      width: 100%;
+
+      .EnvironmentTexte {
+        font-size: 30px;
+        margin-inline: 10px;
+      }
     }
   }
 }

@@ -17,7 +17,7 @@ export function CardProvider({ children }) {
   return <CardContext.Provider value={value}>{children}</CardContext.Provider>;
 }
 CardProvider.propTypes = {
-  children: PropTypes.shape({}).isRequired,
+  children: PropTypes.arrayOf([]).isRequired,
 };
 
 export const useData = () => useContext(CardContext);

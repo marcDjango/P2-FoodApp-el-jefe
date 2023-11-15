@@ -1,3 +1,85 @@
-.BLockNutri {
+.NutrientsTitle {
+  font-size: 32px;
+  margin-block: 24px;
+  font-family: var(--tertiary-font);
+}
+.Nutrients {
+  background-color: #ffbd4198;
+
+  padding: 8px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 120px;
+  margin-bottom: 24px;
+  font-family: var(--primary-font);
+
+  .BLockNutri {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 12px;
+    padding-block: 4px;
+
+    img {
+      display: none;
+    }
+    .DivInfo {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .NumberNutri {
+        display: flex;
+        justify-content: space-between;
+        div {
+          padding-left: 2px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .NutrientsTitle {
+    color: #ffbd4198;
+    font-size: 40px;
+  }
+  .Nutrients {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-height: none;
+    .BLockNutri {
+      display: flex;
+      border-top: 2px;
+      border-top-style: solid;
+      border-bottom: 2px;
+      border-bottom-style: solid;
+      border-color: rgba(255, 255, 255, 0.468);
+      margin-block: 8px;
+      padding-block: 8px;
+
+      img {
+        display: block;
+        min-width: 110px;
+      }
+
+      .DivInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ffbc41;
+        font-size: 20px;
+        div {
+          padding-block: 4px;
+        }
+        .NumberNutri {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
 }

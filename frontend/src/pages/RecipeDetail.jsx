@@ -9,13 +9,22 @@ import StartRecipe from "../components/DetailRecipe/StartRecipe/StartRecipe";
 function Recipe() {
   return (
     <div className="allDetail">
-      <ImgPack />
-      <div className="TexteMain">
-        <Ingredients />
-        <Environment />
+      <div className="CardDetailLeft">
+        <ImgPack />
+        <div className="TexteMainMobile">
+          <Ingredients />
+        </div>
+        <div className="DetailFootMobile">
+          <Nutrients />
+          <StartRecipe />
+          <Environment />
+        </div>
+        <div className="CardDesktopDetail">
+          <Environment />
+          <StartRecipe />
+        </div>
       </div>
-      <div className="DetailFoot">
-        <StartRecipe />
+      <div className="CardDetailRight">
         <Nutrients />
       </div>
     </div>
