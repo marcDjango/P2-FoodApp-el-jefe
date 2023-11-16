@@ -14,15 +14,10 @@ function App() {
 
   useEffect(() => {
     setCurrentPath(location.pathname);
-    if (
-      location.pathname === "/AboutUs" ||
-      location.pathname === "/nutriscore" ||
-      location.pathname === "/tomorrow" ||
-      location.pathname.startsWith("/category/")
-    ) {
-      setIsHome(false);
-    } else {
+    if (location.pathname === "/") {
       setIsHome(true);
+    } else {
+      setIsHome(false);
     }
   }, [location]);
 
