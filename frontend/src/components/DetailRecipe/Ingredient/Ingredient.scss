@@ -59,6 +59,26 @@
     .TimeDesk {
       display: none;
     }
+    .NumberPerson {
+      .Moins {
+        margin-inline: 8px;
+        background: #ffbc41;
+        border-radius: 15px;
+        border: 1px solid black;
+        padding-inline: 4px;
+        text-align: center;
+        box-shadow: 0px 0px 0px 1px;
+      }
+      .Plus {
+        margin-inline: 8px;
+        background: #ffbc41;
+        border-radius: 15px;
+        border: 1px solid black;
+        padding-inline: 4px;
+        text-align: center;
+        box-shadow: 0px 0px 0px 1px;
+      }
+    }
   }
 }
 @media screen and (min-width: 600px) {
@@ -100,6 +120,17 @@
       border-radius: 15px;
       .TimeDesk {
         display: block;
+      }
+      .NumberPerson {
+        .Moins {
+          font-size: 20px;
+          background: rgba(255, 249, 243, 1);
+          padding-inline: 8px;
+        }
+        .Plus {
+          font-size: 20px;
+          background: rgba(255, 249, 243, 1);
+        }
       }
     }
   }
