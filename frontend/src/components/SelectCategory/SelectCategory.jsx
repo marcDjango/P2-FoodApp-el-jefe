@@ -5,11 +5,16 @@ import { toUpperCaseFirstLetter } from "../utils";
 import "./SelectCategory.css";
 
 export default function SelectCategory({
+  query,
   category,
   mealType,
   carousel = true,
 }) {
-  const apiDataCategory = ApiDataManager({ cuisineType: category, mealType });
+  const apiDataCategory = ApiDataManager({
+    query,
+    cuisineType: category,
+    mealType,
+  });
 
   return (
     <>
@@ -28,6 +33,7 @@ export default function SelectCategory({
   );
 }
 SelectCategory.propTypes = {
+  query: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   mealType: PropTypes.string.isRequired,
   carousel: PropTypes.bool.isRequired,

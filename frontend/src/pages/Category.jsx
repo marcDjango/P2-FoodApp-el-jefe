@@ -21,6 +21,7 @@ function Category() {
       <FilterCategory />
       <div key={key}>
         <OneCategory
+          query=""
           category="french"
           mealType={categoryParams}
           carousel={false}

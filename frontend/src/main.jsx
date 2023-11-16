@@ -10,6 +10,8 @@ import AboutUs from "./pages/AboutUs";
 import NutriScore from "./pages/NutriScore";
 import Tomorrow from "./pages/Tomorrow";
 import Category from "./pages/Category";
+import Search from "./pages/Search";
+import RecipeDetail from "./pages/RecipeDetail";
 import FilterRecipeResults from "./pages/FilterRecipesResults";
 
 const router = createBrowserRouter([
@@ -21,7 +23,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "/AboutUs",
         element: <AboutUs />,
       },
       {
@@ -35,6 +37,14 @@ const router = createBrowserRouter([
       {
         path: "/category/:type",
         element: <Category />,
+      },
+      {
+        path: "/Search/:query",
+        element: <Search />,
+      },
+      {
+        path: "/RecipeDetail",
+        element: <RecipeDetail />,
       },
       {
         path: "/filterecipe",

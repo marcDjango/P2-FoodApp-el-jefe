@@ -38,9 +38,15 @@ function MenuBurger() {
                 >
                   Category
                 </button>
-                <Link to="/about">About Us</Link>
-                <Link to="/nutriscore">Nutri-score</Link>
-                <Link to="/tomorrow">Think about</Link>
+                <Link to="/AboutUs" onClick={toggleBurger}>
+                  About Us
+                </Link>
+                <Link to="/nutriscore" onClick={toggleBurger}>
+                  Nutri-score
+                </Link>
+                <Link to="/tomorrow" onClick={toggleBurger}>
+                  Think about
+                </Link>
               </div>
             ) : (
               <div className="Listcat">
@@ -53,24 +59,40 @@ function MenuBurger() {
                 </button>
                 <ul className="NavCat">
                   <li>
-                    <Link to="/category/Breakfast">Breakfast</Link>
+                    <Link to="/category/Breakfast" onClick={toggleBurger}>
+                      Breakfast
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/category/Brunch">Brunch</Link>
+                    <Link to="/category/Brunch" onClick={toggleBurger}>
+                      Brunch
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/category/Dinner">Dinner</Link>
+                    <Link to="/category/Dinner" onClick={toggleBurger}>
+                      Dinner
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/category/Snack">Snack</Link>
+                    <Link to="/category/Snack" onClick={toggleBurger}>
+                      Snack
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/category/Teatime">Teatime</Link>
+                    <Link to="/category/Teatime" onClick={toggleBurger}>
+                      Teatime
+                    </Link>
                   </li>
                 </ul>
-                <Link to="/about">About us</Link>
-                <Link to="/nutriscore">Nutri-score</Link>
-                <Link to="/tomorrow">Think about</Link>
+                <Link to="/AboutUs" onClick={toggleBurger}>
+                  About Us
+                </Link>
+                <Link to="/nutriscore" onClick={toggleBurger}>
+                  Nutri-score
+                </Link>
+                <Link to="/tomorrow" onClick={toggleBurger}>
+                  Think about
+                </Link>
               </div>
             )}
           </div>

@@ -29,3 +29,14 @@
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .CarouselMobile {
+    position: relative;
+    top: -42px;
+    display: block;
+  }
+
+  .CarouselDesktop {
+    display: grid;
+  }
+}
