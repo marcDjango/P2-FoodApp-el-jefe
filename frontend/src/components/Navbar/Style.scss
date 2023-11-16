@@ -1,5 +1,5 @@
 nav {
-  z-index: 2;
+  z-index: 5;
   position: fixed;
   display: flex;
   background-color: #fff9f3;
@@ -15,26 +15,29 @@ nav {
     display: none;
   }
   .Logo {
+    margin-left: 1rem;
+    margin-top: 5px;
     max-width: 110px;
     max-height: 35px;
     filter: sepia(25%);
   }
   .MenuBurgall {
-    padding-block: 4px;
     text-align: right;
     padding-right: 8px;
-
+    .Listcat button {
+      padding-block: 10px;
+    }
     .Listcat a {
       display: flex;
       flex-direction: column;
       text-align: right;
-      padding-block: 2px;
       text-decoration: none;
+      padding-block: 10px;
       color: black;
     }
     .Listcat li {
-      font-size: 12px;
-      padding-block: 0px;
+      margin-block: 0.5rem;
+      font-size: 16px;
     }
     .NavCat {
       list-style: none;
@@ -51,9 +54,9 @@ a {
   }
 
   nav {
-    background: rgba(255, 255, 255, 0.05);
-
+    background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(2px);
+    box-shadow: var(--border-shadow);
 
     li {
       list-style: none;
@@ -78,11 +81,13 @@ a {
           .Catesolo {
             margin-right: 0px;
             li {
+              padding-block: 0.5rem;
               font-size: clamp(14px, 1.5vw, 20px);
               color: white;
             }
           }
           a {
+            padding-inline: 1rem;
             margin-left: 5px;
           }
         }

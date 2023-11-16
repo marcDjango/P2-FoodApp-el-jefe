@@ -6,7 +6,6 @@ function Home() {
   return (
     <div>
       <Carousel />
-
       <FilterCategory />
       <AllCards />
     </div>

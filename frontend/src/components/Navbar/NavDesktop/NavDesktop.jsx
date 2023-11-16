@@ -10,7 +10,7 @@ function DesktopNav() {
   };
 
   return (
-    <div className="NavbarO">
+    <div className="NavbarO" id="navBar-Desktop">
       <div>
         {isCategoryOpen ? (
           <div className="Catedest">
@@ -21,9 +21,9 @@ function DesktopNav() {
             >
               Category
             </button>
-            <Link to="/aboutus">About Us</Link>
+            <Link to="/AboutUs">About Us</Link>
             <Link to="/nutriscore">Nutri-score</Link>
-            <Link to="/thinkabout">Think about</Link>
+            <Link to="/tomorrow">Think about</Link>
           </div>
         ) : (
           <div className="Catedest">
@@ -37,25 +37,35 @@ function DesktopNav() {
               </button>
               <ul className="NavCat">
                 <li>
-                  <Link to="/category/Breakfast">Breakfast</Link>
+                  <Link to="/category/Breakfast" onClick={toggleCategory}>
+                    Breakfast
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/category/Brunch">Brunch</Link>
+                  <Link to="/category/Brunch" onClick={toggleCategory}>
+                    Brunch
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/category/Dinner">Dinner</Link>
+                  <Link to="/category/Dinner" onClick={toggleCategory}>
+                    Dinner
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/category/Snack">Snack</Link>
+                  <Link to="/category/Snack" onClick={toggleCategory}>
+                    Snack
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/category/Teatime">Teatime</Link>
+                  <Link to="/category/Teatime" onClick={toggleCategory}>
+                    Teatime
+                  </Link>
                 </li>
               </ul>
             </div>
-            <Link to="/aboutus">About Us</Link>
+            <Link to="/AboutUs">About Us</Link>
             <Link to="/nutriscore">Nutri-score</Link>
-            <Link to="/thinkabout">Think about</Link>
+            <Link to="/tomorrow">Think about</Link>
           </div>
         )}
       </div>

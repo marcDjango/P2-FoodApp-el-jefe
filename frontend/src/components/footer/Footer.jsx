@@ -17,7 +17,7 @@ function Footer() {
   }
 
   return (
-    <div className="main">
+    <div className="main" id="footer">
       <div className="vector2">
         <img src={Vector3} alt="wave" />
       </div>

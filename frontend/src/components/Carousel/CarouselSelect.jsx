@@ -8,12 +8,12 @@ import knifeRight from "../../assets/images/knifeRight.svg";
 
 import "./CarouselCard.scss";
 
-export default function CarouselSelect({ types }) {
-  const apiDatatypes = ApiDataManager({ mealType: types });
+export default function CarouselSelect({ cuisineType = "french", mealType }) {
+  const apiDatatypes = ApiDataManager({ cuisineType, mealType });
   const [index, setIndex] = useState(0);
 
   const handleClickLess = () => {
-    if (index === 0 && apiDatatypes.recipesData.length) {
+    if (apiDatatypes.recipesData.length && index === 0) {
       setIndex(apiDatatypes.recipesData.length - 1);
     } else {
       setIndex(index - 1);
@@ -21,8 +21,8 @@ export default function CarouselSelect({ types }) {
   };
   const handleClickMore = () => {
     if (
-      index === apiDatatypes.recipesData.length - 1 &&
-      apiDatatypes.recipesData.length
+      apiDatatypes.recipesData.length &&
+      index === apiDatatypes.recipesData.length - 1
     ) {
       setIndex(0);
     } else {
@@ -57,5 +57,6 @@ export default function CarouselSelect({ types }) {
   );
 }
 CarouselSelect.propTypes = {
-  types: PropTypes.string.isRequired,
+  mealType: PropTypes.string.isRequired,
+  cuisineType: PropTypes.string.isRequired,
 };
