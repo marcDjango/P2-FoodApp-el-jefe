@@ -55,18 +55,6 @@ body {
 .planche {
   display: none;
 }
-
-@media screen and (min-width: 600px) {
-  .planche {
-    display: block;
-    width: 100%;
-    max-height: 480px;
-    object-fit: cover;
-  }
-}
-.disablehero {
-  display: none;
-}
 @media screen and (min-width: 600px) {
   .margin {
     height: 0;
@@ -81,16 +69,4 @@ body {
 }
 .disablehero {
   display: none;
-}
-@media screen and (min-width: 600px) {
-  .margin {
-    height: 0;
-    width: 100%;
-  }
-  .planche {
-    width: 100%;
-    max-height: 480px;
-    object-fit: cover;
-    display: block;
-  }
 }
