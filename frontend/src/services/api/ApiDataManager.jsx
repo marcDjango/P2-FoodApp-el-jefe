@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 
-function ApiDataManager({ cuisineType = "french", mealType = "Dinner" }) {
+function ApiDataManager(options) {
+  const { query = "", cuisineType, mealType } = options;
   const apiId = import.meta.env.VITE_EDAMAN_API_ID;
   const apiKey = import.meta.env.VITE_EDAMAN_API_KEY;
   const apiUrlEdamam = import.meta.env.VITE_API_URL;
 
   const [recipesData, setRecipesData] = useState([]);
-
-  const apiUrlOptions = `?q=&app_id=${apiId}&app_key=${apiKey}&type=public&ingr=10-18&cuisineType=${cuisineType}&mealType=${mealType}&time=5%2B`;
-  const apiUrl = apiUrlEdamam + apiUrlOptions;
-
+  const apiUrlSearch = `?q=${query}&app_id=${apiId}&app_key=${apiKey}&type=public&ingr=10-18&time=5%2B`;
+  const apiUrlOptions = `?app_id=${apiId}&app_key=${apiKey}&type=public&ingr=10-18&cuisineType=${cuisineType}&mealType=${mealType}&time=5%2B`;
+  const apiUrlEnd = query ? apiUrlSearch : apiUrlOptions;
+  const apiUrl = apiUrlEdamam + apiUrlEnd;
+  let fetchDataCalled = false;
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -21,7 +23,10 @@ function ApiDataManager({ cuisineType = "french", mealType = "Dinner" }) {
       }
     };
 
-    fetchData();
+    if (!fetchDataCalled) {
+      fetchData();
+      fetchDataCalled = true;
+    }
   }, []);
 
   return {

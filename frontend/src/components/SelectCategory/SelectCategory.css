@@ -16,7 +16,8 @@
 }
 
 .title_filter {
-  margin-top: 80px;
+  display: flex;
+  align-items: center;
   margin-left: 4rem;
   margin-bottom: 32px;
   height: 68px;

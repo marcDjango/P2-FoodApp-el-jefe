@@ -6,8 +6,8 @@ import knifeRight from "../../assets/images/knifeRight.svg";
 
 import "./CarouselCard.scss";
 
-export default function CarouselSelect({ types }) {
-  const apiDatatypes = ApiDataManager({ mealType: types });
+export default function CarouselSelect({ cuisineType = "french", mealType }) {
+  const apiDatatypes = ApiDataManager({ cuisineType, mealType });
   const [index, setIndex] = useState(0);
 
   const handleClickLess = () => {
@@ -49,5 +49,6 @@ export default function CarouselSelect({ types }) {
   );
 }
 CarouselSelect.propTypes = {
-  types: PropTypes.string.isRequired,
+  mealType: PropTypes.string.isRequired,
+  cuisineType: PropTypes.string.isRequired,
 };

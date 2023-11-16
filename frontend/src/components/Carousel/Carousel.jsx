@@ -6,12 +6,12 @@ function Carousel() {
   return (
     <>
       <div className="CarouselDesktop">
-        <CarouselSelect types="breakfast" />
-        <CarouselSelect types="dinner" />
-        <CarouselSelect types="teatime" />
+        {/* <CarouselSelect mealType="breakfast" />
+        <CarouselSelect mealType="dinner" />
+        <CarouselSelect mealType="teatime" /> */}
       </div>
       <div className="CarouselMobile">
-        <CarouselSelect types="lunch" />
+        <CarouselSelect mealType="lunch" />
       </div>
     </>
   );
