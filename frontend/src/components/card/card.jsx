@@ -1,14 +1,23 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import RefactorTitle from "../utils";
+
 import nutriscoreA from "../../assets/images/nutri-score-a.png";
 import "./card.scss";
+import { useData } from "../../services/Context";
 
 function Card({ data }) {
+  const { setData } = useData();
+  const handleClickCard = () => {
+    setData(data);
+  };
   return (
     <div className="Contain">
       <div className="border-style">
         <div className="picture">
-          <img src={data.image} alt={data.label} />
+          <Link to="/RecipeDetail" onClick={handleClickCard}>
+            <img src={data.image} alt={data.label} />
+          </Link>
         </div>
         <div className="title">
           <h3>{RefactorTitle(data.label)}</h3>

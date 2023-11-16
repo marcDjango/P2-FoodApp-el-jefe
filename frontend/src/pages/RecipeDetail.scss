@@ -1,0 +1,53 @@
+.allDetail {
+  padding-top: 58px;
+  padding-bottom: 58px;
+  background-color: #fff9f3;
+  .TexteMainMobile {
+    margin-inline: 45px;
+    margin-block: 8px;
+  }
+
+  .DetailFootMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .CardDesktopDetail {
+    display: none;
+  }
+  .CardDetailRight {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .allDetail {
+    background-color: rgba(0, 0, 0, 0.912);
+    display: grid;
+    grid-template-columns: 10fr 3fr;
+    .TexteMainMobile {
+      margin-inline: 0px;
+    }
+
+    .CardDetailLeft {
+      background-color: rgba(255, 249, 243, 1);
+      border-radius: 20px;
+      padding: 64px;
+      margin-right: 24px;
+      margin-left: clamp(48px, 4%, 72px);
+      .DetailFootMobile {
+        display: none;
+      }
+      .CardDesktopDetail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    .CardDetailRight {
+      display: block;
+      padding-right: clamp(24px, 10%, 48px);
+    }
+  }
+}

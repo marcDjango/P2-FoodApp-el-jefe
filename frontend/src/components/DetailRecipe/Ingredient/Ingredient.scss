@@ -1,0 +1,117 @@
+.IngredientsMain {
+  position: relative;
+  margin-top: 32px;
+  font-family: var(--primary-font);
+  .IngredientsTitleBlock {
+    display: flex;
+    margin-bottom: 16px;
+    padding-top: 64px;
+    justify-content: space-between;
+    .IngredientsTitle {
+      font: bold;
+      font-size: 32px;
+      font-family: var(--tertiary-font);
+    }
+    .TimeMobile {
+      font-size: 32px;
+      font-family: var(--tertiary-font);
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 16px;
+
+    .LiIngredient {
+      display: flex;
+      justify-content: space-between;
+      font-size: clamp(18px, 2.5vw, 22px);
+      padding-block: 3px;
+      li {
+        margin-top: 2px;
+        margin-bottom: 2px;
+      }
+      div {
+        display: flex;
+        li {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  .PersonneAdjust {
+    position: absolute;
+    display: flex;
+    top: 0%;
+    left: 25%;
+    background-color: #ffbc41;
+    border-radius: 15px;
+    box-shadow: 2px;
+    padding-block: 4px;
+    padding-inline: 4px;
+
+    div {
+      padding-inline: 4px;
+      font-size: 24px;
+    }
+    .TimeDesk {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .IngredientsMain {
+    padding-block: 48px;
+    font-family: var(--primary-font);
+    .IngredientsTitleBlock {
+      .IngredientsTitle {
+        font-size: 60px;
+        font-family: var(--tertiary-font);
+      }
+      .TimeMobile {
+        display: none;
+      }
+    }
+    ul {
+      .LiIngredient {
+        font-size: clamp(12px, 2vw, 30px);
+
+        padding-inline: 8px;
+        padding-block: 6px;
+        div {
+          li {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+
+    .PersonneAdjust {
+      max-width: 330px;
+      justify-content: center;
+      background: none;
+      border: 2px solid;
+      top: -40px;
+      left: 50%;
+      font-size: clamp(24px, 3vw, 32px);
+      padding-block: 12px;
+      border-radius: 15px;
+      .TimeDesk {
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  .IngredientsMain {
+    padding-block: 48px;
+    font-family: var(--primary-font);
+
+    ul {
+      max-height: 400px;
+      flex-wrap: wrap;
+    }
+  }
+}
