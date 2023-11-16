@@ -55,8 +55,8 @@ a {
 
   nav {
     background: rgba(255, 255, 255, 0);
-    // backdrop-filter: blur(2px);
-    // box-shadow: var(--border-shadow);
+    backdrop-filter: blur(2px);
+    box-shadow: var(--border-shadow);
 
     li {
       list-style: none;
