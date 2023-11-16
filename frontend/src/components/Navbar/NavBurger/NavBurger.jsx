@@ -38,9 +38,9 @@ function MenuBurger() {
                 >
                   Category
                 </button>
-                <Link to="/aboutus">About Us</Link>
+                <Link to="/about">About Us</Link>
                 <Link to="/nutriscore">Nutri-score</Link>
-                <Link to="/thinkabout">Think about</Link>
+                <Link to="/tomorrow">Think about</Link>
               </div>
             ) : (
               <div className="Listcat">
@@ -68,9 +68,9 @@ function MenuBurger() {
                     <Link to="/category/Teatime">Teatime</Link>
                   </li>
                 </ul>
-                <Link to="/aboutus">About Us</Link>
+                <Link to="/about">About us</Link>
                 <Link to="/nutriscore">Nutri-score</Link>
-                <Link to="/thinkabout">Think about</Link>
+                <Link to="/tomorrow">Think about</Link>
               </div>
             )}
           </div>

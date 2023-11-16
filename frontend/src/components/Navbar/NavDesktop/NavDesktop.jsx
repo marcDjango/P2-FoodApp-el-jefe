@@ -21,9 +21,9 @@ function DesktopNav() {
             >
               Category
             </button>
-            <Link to="/aboutus">About Us</Link>
+            <Link to="/about">About Us</Link>
             <Link to="/nutriscore">Nutri-score</Link>
-            <Link to="/thinkabout">Think about</Link>
+            <Link to="/tomorrow">Think about</Link>
           </div>
         ) : (
           <div className="Catedest">

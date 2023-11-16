@@ -18,6 +18,10 @@
   src: url("../../assets/fonts/Sanseriffic.otf");
 }
 
+button {
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
