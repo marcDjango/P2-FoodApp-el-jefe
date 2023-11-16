@@ -11,6 +11,7 @@ import NutriScore from "./pages/NutriScore";
 import Tomorrow from "./pages/Tomorrow";
 import Category from "./pages/Category";
 import Search from "./pages/Search";
+import RecipeDetail from "./pages/RecipeDetail";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/Search/:query",
         element: <Search />,
+      },
+      {
+        path: "/RecipeDetail",
+        element: <RecipeDetail />,
       },
     ],
   },

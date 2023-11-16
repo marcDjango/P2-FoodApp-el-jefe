@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-
+import { CardProvider } from "./services/Context";
 import Navbar from "./components/Navbar/Navbar";
 import planche from "./assets/images/Planchedecoup.jpg";
 import Footer from "./components/footer/Footer";
@@ -27,7 +27,7 @@ function App() {
   }, [location]);
 
   return (
-    <>
+    <CardProvider>
       <Navbar />
       <div key={currentPath} className="hero-position">
         {ishome ? <div className="margin" /> : ""}
@@ -43,7 +43,7 @@ function App() {
         <Outlet />
       </main>
       <Footer />
-    </>
+    </CardProvider>
   );
 }
 
