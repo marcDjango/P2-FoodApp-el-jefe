@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useData } from "../../services/Context";
 import ApiDataManager from "../../services/api/ApiDataManager";
 import knifeLeft from "../../assets/images/knifeLeft.svg";
 import knifeRight from "../../assets/images/knifeRight.svg";
@@ -27,6 +29,10 @@ export default function CarouselSelect({ types }) {
       setIndex(index + 1);
     }
   };
+  const { setData } = useData();
+  const handleClickCard = () => {
+    setData(apiDatatypes.recipesData[index].recipe);
+  };
 
   return (
     <div className="blockCarousel">
@@ -35,10 +41,12 @@ export default function CarouselSelect({ types }) {
       </button>
       {apiDatatypes.recipesData.length && (
         <div className="picture">
-          <img
-            src={apiDatatypes.recipesData[index].recipe.image}
-            alt="Magnifique nourriture"
-          />
+          <Link to="/RecipeDetail" onClick={handleClickCard}>
+            <img
+              src={apiDatatypes.recipesData[index].recipe.image}
+              alt="good food"
+            />
+          </Link>
         </div>
       )}
 

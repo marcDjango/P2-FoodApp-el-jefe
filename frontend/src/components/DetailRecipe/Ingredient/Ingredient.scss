@@ -93,7 +93,7 @@
       justify-content: center;
       background: none;
       border: 2px solid;
-      top: -40px;
+      top: -30px;
       left: 50%;
       font-size: clamp(24px, 3vw, 32px);
       padding-block: 12px;
@@ -112,6 +112,9 @@
     ul {
       max-height: 400px;
       flex-wrap: wrap;
+    }
+    .PersonneAdjust {
+      left: clamp(304px, 50%, 2200px);
     }
   }
 }
