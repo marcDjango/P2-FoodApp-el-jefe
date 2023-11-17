@@ -10,14 +10,13 @@ function Tomorrow() {
       <div className="introduction">
         <h1>Let's think about tomorrow</h1>
         <p>
-          In a constantly changing world, it is essential that we think about
-          the way we eat and the impact of our choices food on the future of our
-          planet. Challenges environmental issues are increasingly pressing, and
-          our food plays a key role in preserving the Earth. In this article, we
-          will explore the notion of “Let’s think about Tomorrow” in the context
-          sustainable cooking. We will share delicious recipes and
-          environmentally friendly to inspire you to make choices more
-          responsible food.
+          In a constantly evolving world, it is essential that we reflect on our
+          eating habits and the impact of our dietary choices on the future of
+          our planet. Environmental issues are becoming increasingly urgent, and
+          our diet plays a key role in preserving the Earth. In this article, we
+          will explore the concept of 'Thinking About Tomorrow' in the context
+          of sustainable cooking. We will share delicious and environmentally
+          friendly recipes to inspire you to make more responsible food choices.
         </p>
       </div>
 
@@ -42,10 +41,10 @@ function Tomorrow() {
         <div className="paragraph">
           <h2>Reduce Food Waste</h2>
           <p>
-            Food waste is a major problem worldwide of today. By reducing waste
-            in your kitchen, you contribute to the preservation of natural
-            resources. A tip simple is to plan your meals, save leftovers and be
-            creative with the ingredients you have on hand.
+            Food waste is a significant issue in today's world. By minimizing
+            waste in your kitchen, you play a part in conserving natural
+            resources. A simple tip is to plan your meals, store leftovers, and
+            get creative with the ingredients you have on hand.
           </p>
         </div>
         <div id="pic">
@@ -60,10 +59,10 @@ function Tomorrow() {
         <div className="paragraph">
           <h2>Opting for a Vegetarian and Vegan Diet</h2>
           <p>
-            Meat production has a significant environmental impact in terms of
-            resource use and gas emissions tight. By incorporating more
-            plant-based meals into your diet, you reduce your carbon footprint
-            and contribute to the preservation of ecosystems.
+            The production of meat has a significant environmental impact in
+            terms of resource use and greenhouse gas emissions. By incorporating
+            more plant-based meals into your diet, you reduce your carbon
+            footprint and contribute to the preservation of ecosystems.
           </p>
         </div>
       </div>
@@ -73,9 +72,9 @@ function Tomorrow() {
           <h2>Favor Organic Foods</h2>
           <p>
             Organic foods are produced without the use of chemical pesticides
-            and synthetic fertilizers, making them more eco-friendly. When
-            choosing products organic, you support sustainable agriculture and
-            preserve the biodiversity.
+            and synthetic fertilizers, making them more environmentally
+            friendly. By choosing organic products, you support sustainable
+            agriculture and preserve biodiversity.
           </p>
         </div>
         <div id="pic">
@@ -86,12 +85,12 @@ function Tomorrow() {
       <div className="conclusion">
         <p>
           Thinking about tomorrow means adopting a sustainable approach to our
-          food. By making conscious choices, such as eating locally, reduce food
-          waste, opt for a diet based on plants and favor organic foods, we can
-          contribute to a better future for our planet. These recipes delicious
-          foods are not only good for you, but also for the environment. So, put
-          on your apron and get ready to enjoy a greener and more sustainable
-          future.
+          diet. By making conscious choices such as eating locally, reducing
+          food waste, opting for a plant-based diet, and choosing organic foods,
+          we can contribute to a better future for our planet. These delicious
+          recipes are not only good for you but also for the environment. So,
+          put on your apron and get ready to savor a greener and more
+          sustainable future.
         </p>
       </div>
     </div>

@@ -39,13 +39,13 @@ function AboutUs() {
             isClicked.Adrien ? "displayOn" : "displayOff"
           }`}
         >
-          Adrien, it is the web developer who could be confused with a Wizard.
-          Its ability to transform lines of code into websites breathtaking is
-          art. With an almost mystical elegance, he Juggles HTML, CSS and
-          JavaScript as if they were cards from a tarot deck. Each project is a
-          challenge for him, and he approaches with boundless creativity. When
-          Adrien takes the reins of a project, we can be sure that the result
-          will be magical, as well visually and technically.
+          Adrien is the web developer who could be mistaken for a magician. His
+          ability to transform lines of code into stunning websites is truly an
+          art. With an almost mystical elegance, he juggles HTML, CSS, and
+          JavaScript as if they were the cards of a tarot deck. Each project is
+          a challenge for him, and he approaches them with overflowing
+          creativity. When Adrien takes the reins of a project, you can be sure
+          that the result will be magical, both visually and technically.
         </p>
         <img
           className={`profil-icon ${
@@ -69,13 +69,13 @@ function AboutUs() {
             isClicked.Marcelo ? "displayOn" : "displayOff"
           }`}
         >
-          Marcelo, this is the genius of the backend. He navigates the basics of
-          data and servers with disconcerting ease. For him, the security and
-          stability are the key words of all development web. He enjoys solving
-          complex problems, whether in optimizing SQL queries or setting up
-          monitoring systems impeccable backup. Marcelo is the data keeper,
-          ensuring ensures that everything works perfectly behind the scenes,
-          allowing users to enjoy a seamless web experience.
+          Marcelo is the genius of data management. He navigates databases and
+          servers with disarming ease. For him, security and stability are the
+          watchwords of any web development. He enjoys solving complex problems,
+          whether it's optimizing SQL queries or implementing flawless backup
+          systems. Marcelo is the guardian of data, ensuring that everything
+          runs seamlessly behind the scenes, allowing users to enjoy a seamless
+          web experience.
         </p>
         <img
           className={`profil-icon ${
