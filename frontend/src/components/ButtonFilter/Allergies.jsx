@@ -35,7 +35,7 @@ function Allergies({ onClick, setIsClicked, setParamsValueAllergies }) {
     { nameBtn: "soy-free", title: "Soy free", bool: false, className: "btn" },
   ];
 
-  // hook
+  // state
   const [isArrayState, setIsArrayState] = useState(allergies);
   const [isDeployed, setIsDeployed] = useState(false);
 

@@ -36,7 +36,7 @@ function MealType({ onClick, setIsClicked, setParamsValueMeal }) {
     let newValueMeal = "";
     isArrayState.forEach((el) => {
       if (el.bool) {
-        newValueMeal += `${"mealType="}${el.nameBtn}`;
+        newValueMeal += `${"&mealType="}${el.nameBtn}`;
       }
     });
     setParamsValueMeal(newValueMeal);

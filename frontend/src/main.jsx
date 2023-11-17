@@ -1,9 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./reset.css";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import App from "./App";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
@@ -47,7 +45,7 @@ const router = createBrowserRouter([
         element: <RecipeDetail />,
       },
       {
-        path: "/filterecipe",
+        path: "/filterecipe/:filter",
         element: <FilterRecipeResults />,
       },
     ],

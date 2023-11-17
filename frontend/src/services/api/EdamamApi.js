@@ -4,32 +4,26 @@ async function getRecipes(cuisineType, health, diets, nutri, meal, time) {
       import.meta.env.VITE_EDAMAN_API_ID
     }&app_key=${import.meta.env.VITE_EDAMAN_API_KEY}`;
 
-    // Ajouter le paramètre cuisineType si défini
     if (cuisineType) {
       apiUrl += cuisineType;
     }
 
-    // // Ajouter le paramètre health si défini et non null
     if (health !== null && health !== undefined) {
       apiUrl += health;
     }
 
-    // // Ajouter le paramètre health si défini et non null
     if (diets !== null && diets !== undefined) {
       apiUrl += diets;
     }
 
-    // // Ajouter le paramètre health si défini et non null
     if (nutri !== null && nutri !== undefined) {
       apiUrl += nutri;
     }
 
-    // // Ajouter le paramètre health si défini et non null
     if (meal !== null && meal !== undefined) {
       apiUrl += meal;
     }
 
-    // // Ajouter le paramètre health si défini et non null
     if (time !== null && time !== undefined) {
       apiUrl += time;
     }

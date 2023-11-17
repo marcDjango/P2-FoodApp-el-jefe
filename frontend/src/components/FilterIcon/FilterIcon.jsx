@@ -1,8 +1,8 @@
-/* eslint-disable */
+/*eslint-disable*/
 
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import getRecipes from "../../services/api/EdamamApi";
-import { Link } from "react-router-dom";
 import "./FilterIcon.scss";
 import TraditionalFood from "../ButtonFilter/TraditionalFood";
 import Allergies from "../ButtonFilter/Allergies";
@@ -13,7 +13,7 @@ import SetUpTime from "../ButtonFilter/SetUpTime";
 import CloseIcon from "../../assets/close-icon.svg";
 
 function FilterIcon() {
-  // STATE (état, données) ----------------------------------------------
+  // HOOK (état, données) ----------------------------------------------
 
   // states
 
@@ -43,14 +43,18 @@ function FilterIcon() {
 
   // COMPORTEMENTS (dynamique) ----------------------------------------------
 
+  // const handleBtnClick = (i, array, setter) => {
+  //   array[i].bool = !array[i].bool;
+  //   setter([...array]);
+  // };
+
   const handleBtnClick = (i, array, setter) => {
-    array[i].bool = !array[i].bool;
-    setter([...array]);
+    const newArray = [...array];
+    newArray[i].bool = !newArray[i].bool;
+    setter(newArray);
   };
 
-  useEffect(() => {
-    console.log(isClicked);
-  }, [isClicked]);
+  useEffect(() => {}, [isClicked]);
 
   const clickSubmit = () => {
     getRecipes(
@@ -62,7 +66,7 @@ function FilterIcon() {
       paramsValueTime
     )
       .then((data) => {
-        console.log(data);
+        // console.log("iiii", data);
         return data;
       })
       .catch((error) => {
@@ -77,7 +81,7 @@ function FilterIcon() {
   return (
     <div className="main-filter-container">
       <div className="main-icon-container">
-        <button className="close-btn">
+        <button type="button" className="close-btn">
           <img src={CloseIcon} alt="close-icon" />
         </button>
       </div>
@@ -87,7 +91,7 @@ function FilterIcon() {
         <div>
           <TraditionalFood
             onClick={(indexTrad) => {
-              handleBtnClick(indexTrad, isClicked, setIsClicked); // Pass the index and the array
+              handleBtnClick(indexTrad, isClicked, setIsClicked);
             }}
             setIsClicked={setIsClicked}
             setParamsValue={setParamsValue}
@@ -103,7 +107,7 @@ function FilterIcon() {
                 indexAll,
                 isClickedAllergies,
                 setIsClickedAllergies
-              ); // Pass the index and the array
+              );
             }}
             setIsClicked={setIsClickedAllergies}
             setParamsValueAllergies={setParamsValueAllergies}
@@ -115,7 +119,7 @@ function FilterIcon() {
         <div>
           <DietsPlan
             onClick={(indexAll) => {
-              handleBtnClick(indexAll, isClickedDiets, setIsClickedDiets); // Pass the index and the array
+              handleBtnClick(indexAll, isClickedDiets, setIsClickedDiets);
             }}
             setIsClicked={setIsClickedDiets}
             setParamsValueDiets={setParamsValueDiets}
@@ -127,7 +131,7 @@ function FilterIcon() {
         <div>
           <NutritionalProfil
             onClick={(indexAll) => {
-              handleBtnClick(indexAll, isClickedNutri, setIsClickedNutri); // Pass the index and the array
+              handleBtnClick(indexAll, isClickedNutri, setIsClickedNutri);
             }}
             setIsClicked={setIsClickedNutri}
             setParamsValueNutri={setParamsValueNutri}
@@ -139,7 +143,7 @@ function FilterIcon() {
         <div>
           <MealType
             onClick={(indexAll) => {
-              handleBtnClick(indexAll, isClickedMeal, setIsClickedMeal); // Pass the index and the array
+              handleBtnClick(indexAll, isClickedMeal, setIsClickedMeal);
             }}
             setIsClicked={setIsClickedMeal}
             setParamsValueMeal={setParamsValueMeal}
@@ -151,7 +155,7 @@ function FilterIcon() {
         <div>
           <SetUpTime
             onClick={(indexAll) => {
-              handleBtnClick(indexAll, isClickedTime, setIsClickedTime); // Pass the index and the array
+              handleBtnClick(indexAll, isClickedTime, setIsClickedTime);
             }}
             setIsClicked={setIsClickedTime}
             setParamsValueTime={setParamsValueTime}
@@ -161,9 +165,18 @@ function FilterIcon() {
         {/* -------------------- SUBMIT -------------------- */}
       </div>
       <div className="submitBtn">
-        <Link className="custom-link" to="/filterecipe">
+        <Link
+          className="custom-link"
+          to={`/filterecipe/${paramsValue ? paramsValue : ""}${
+            paramsValueAllergies ? paramsValueAllergies : ""
+          }${paramsValueDiets ? paramsValueDiets : ""}${
+            paramsValueNutri ? paramsValueNutri : ""
+          }${paramsValueMeal ? paramsValueMeal : ""}${
+            paramsValueTime ? paramsValueTime : ""
+          }`}
+        >
           <button type="button" onClick={clickSubmit}>
-            SUBMIT
+            SEARCH
           </button>
         </Link>
       </div>
