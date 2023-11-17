@@ -1,27 +1,25 @@
-import { useEffect, useState } from "react";
+// SearchStyle.js
+import { useState } from "react";
+import { useScrollEffect, useWindowWidth } from "../utils";
 
 function SearchStyle({ locationHome }) {
+  const windowWidth = useWindowWidth();
   const [isFixed, setIsFixed] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollYWindow = window.scrollY;
-      const windowWidth = window.innerWidth;
-      if (scrollYWindow >= 208 && windowWidth > 600) {
-        setIsFixed(true);
-      } else if (scrollYWindow >= 20 && windowWidth < 600 && locationHome) {
-        setIsFixed(true);
-      } else if (scrollYWindow >= 208 && windowWidth < 600 && !locationHome) {
-        setIsFixed(true);
-      } else {
-        setIsFixed(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [locationHome]);
+  useScrollEffect(() => {
+    const scrollYWindow = window.scrollY;
+
+    if (
+      (scrollYWindow >= 190 && windowWidth > 600) ||
+      (scrollYWindow >= 20 && windowWidth < 600 && locationHome) ||
+      (scrollYWindow >= 180 && windowWidth < 600 && !locationHome)
+    ) {
+      setIsFixed(true);
+    } else {
+      setIsFixed(false);
+    }
+  });
+
   return isFixed;
 }
 

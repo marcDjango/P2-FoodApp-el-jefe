@@ -9,7 +9,19 @@ import Lunch from "../../assets/images/LunchIcon.svg";
 import Snack from "../../assets/images/Group1.svg";
 import Teatime from "../../assets/images/Group3.svg";
 
+import BreakfastAct from "../../assets/images/Group(4).svg";
+import BrunchAct from "../../assets/images/Group(6).svg";
+import LunchAct from "../../assets/images/LunchIcon(1).svg";
+import SnackAct from "../../assets/images/Group5.svg";
+import TeatimeAct from "../../assets/images/Group(7).svg";
+
 const bkgFilter = [bkgfilter1, bkgfilter2, bkgfilter3, bkgfilter4, bkgfilter5];
 const iconFilter = [Breakfast, Brunch, Lunch, Snack, Teatime];
-
-export { bkgFilter, iconFilter };
+const iconFilterActived = [
+  BreakfastAct,
+  BrunchAct,
+  LunchAct,
+  SnackAct,
+  TeatimeAct,
+];
+export { bkgFilter, iconFilter, iconFilterActived };

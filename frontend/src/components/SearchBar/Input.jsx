@@ -4,15 +4,17 @@ import PropTypes from "prop-types";
 import SearchStyle from "./SearchStyle";
 import Close from "../../assets/images/CloseIcon.svg";
 import Search from "../../assets/images/SearchIcon.svg";
+import CloseMobile from "../../assets/images/CloseIcon1.svg";
+import SearchMobile from "../../assets/images/SearchIcon(2).svg";
+
 import "./Input.scss";
 
 export default function Input({ placeholder, value, onChange, locationHome }) {
   const [isActive, setIsActive] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth); // Track window width
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const isFixed = SearchStyle(locationHome);
   const isSearchDisabled = !value;
   useEffect(() => {
-    // Update window width on resize
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => {
@@ -51,7 +53,7 @@ export default function Input({ placeholder, value, onChange, locationHome }) {
   if (isFixed && windowWidth >= 600) {
     navbarStyle = {
       position: "fixed",
-      top: "1.2rem",
+      top: "1.8rem",
       backgroundColor: "#242323",
       marginTop: "18px",
     };
@@ -77,6 +79,8 @@ export default function Input({ placeholder, value, onChange, locationHome }) {
       };
     }
   }
+  const searchImage = windowWidth <= 600 ? SearchMobile : Search;
+  const closeImage = windowWidth <= 600 ? CloseMobile : Close;
 
   return (
     <div className="navbar-search" style={navbarStyle}>
@@ -91,7 +95,7 @@ export default function Input({ placeholder, value, onChange, locationHome }) {
               className="btn"
               to={isSearchDisabled ? "/" : `/Search/${value}`}
             >
-              <img src={Search} alt="button search" />
+              <img src={searchImage} alt="button search" />
             </Link>
           </button>
         </div>
@@ -108,7 +112,7 @@ export default function Input({ placeholder, value, onChange, locationHome }) {
             className="calltoaction"
             onClick={handleOnClick}
           >
-            <img src={Close} alt="button close" />
+            <img src={closeImage} alt="button close" />
           </button>
         </div>
       </div>

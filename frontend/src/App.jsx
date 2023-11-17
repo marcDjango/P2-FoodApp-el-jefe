@@ -1,5 +1,6 @@
-import { Outlet, useLocation } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
+import React from "react";
+import { useLocationEffect } from "./components/utils";
 import { CardProvider } from "./services/Context";
 import Navbar from "./components/Navbar/Navbar";
 import planche from "./assets/images/Planchedecoup.jpg";
@@ -8,36 +9,20 @@ import SearchBar from "./components/SearchBar/SearchBar";
 import "./App.css";
 
 function App() {
-  const location = useLocation();
-  const [currentPath, setCurrentPath] = useState("");
-  const [ishome, setIsHome] = useState();
-
-  useEffect(() => {
-    setCurrentPath(location.pathname);
-    if (
-      location.pathname === "/AboutUs" ||
-      location.pathname === "/nutriscore" ||
-      location.pathname === "/tomorrow" ||
-      location.pathname.startsWith("/category/")
-    ) {
-      setIsHome(false);
-    } else {
-      setIsHome(true);
-    }
-  }, [location]);
+  const { currentPath, isHome } = useLocationEffect("", false);
 
   return (
     <CardProvider>
       <Navbar />
       <div key={currentPath} className="hero-position">
-        {ishome ? <div className="margin" /> : ""}
+        {isHome ? <div className="margin" /> : ""}
         <img
           src={planche}
-          className={`planche ${ishome ? "disablehero" : ""}`}
+          className={`planche ${isHome ? "disablehero" : ""}`}
           alt="Planche à découper"
           id="hero-Desktop"
         />
-        <SearchBar locationHome={ishome} />
+        <SearchBar locationHome={isHome} />
       </div>
       <main>
         <Outlet />

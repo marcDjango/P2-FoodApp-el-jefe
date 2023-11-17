@@ -6,16 +6,16 @@
 }
 @font-face {
   font-family: "paperclip";
-  src: url("../../assets/fonts/PaperclipSansSerif.otf");
+  src: url("./assets/fonts/PaperclipSansSerif.otf");
 }
 @font-face {
   font-family: "poppins";
-  src: url("../../assets/fonts/Poppins-ExtraLight.ttf");
+  src: url("./assets/fonts/Poppins-ExtraLight.ttf");
 }
 
 @font-face {
   font-family: "sansserif";
-  src: url("../../assets/fonts/Sanseriffic.otf");
+  src: url("./assets/fonts/Sanseriffic.otf");
 }
 
 * {
@@ -35,6 +35,9 @@
 }
 body {
   background-color: #242323;
+}
+main {
+  margin-bottom: 20vh;
 }
 .container {
   scrollbar-width: none;
@@ -58,6 +61,7 @@ body {
   object-fit: cover;
   display: block;
 }
+
 .disablehero {
   display: none;
 }
@@ -67,6 +71,11 @@ body {
     width: 100%;
   }
   .planche {
+    margin-bottom: 1rem;
     display: block;
+  }
+  main {
+    /* display: flex; */
+    margin-bottom: 20vh;
   }
 }
