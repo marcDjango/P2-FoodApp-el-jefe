@@ -17,9 +17,10 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 8px;
 
   .vector2 img {
+    position: relative;
+    bottom: -3px;
     width: 100%;
     height: auto;
     padding: 0;
