@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+.container_carousel {
+  scrollbar-width: none; /* Firefox 64 */
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.container_body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.title_filter {
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+  margin-bottom: 32px;
+  margin-top: 4rem;
+  height: 68px;
+  font-family: Poppins, sans-serif;
+  font-weight: lighter;
+  font-size: 32px;
+  color: #fff;
+  text-transform: uppercase;
+}

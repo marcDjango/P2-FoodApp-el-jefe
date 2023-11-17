@@ -1,41 +1,34 @@
-import Counter from "./components/Counter";
-import logo from "./assets/logo.svg";
-
+import { Outlet } from "react-router-dom";
+import React from "react";
+import { useLocationEffect } from "./components/utils";
+import { CardProvider } from "./services/Context";
+import Navbar from "./components/Navbar/Navbar";
+import planche from "./assets/images/Planchedecoup.jpg";
+import Footer from "./components/footer/Footer";
+import SearchBar from "./components/SearchBar/SearchBar";
 import "./App.css";
 
 function App() {
+  const { currentPath, isHome } = useLocationEffect("", false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-
-        <Counter />
-
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {" | "}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+    <CardProvider>
+      <Navbar />
+      <div key={currentPath} className="hero-position">
+        {isHome ? <div className="margin" /> : ""}
+        <img
+          src={planche}
+          className={`planche ${isHome ? "disablehero" : ""}`}
+          alt="Planche à découper"
+          id="hero-Desktop"
+        />
+        <SearchBar locationHome={isHome} />
+      </div>
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </CardProvider>
   );
 }
 

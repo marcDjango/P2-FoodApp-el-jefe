@@ -1,0 +1,47 @@
+.blockCarousel {
+  position: relative;
+  display: flex;
+
+  .left {
+    position: absolute;
+    left: 3%;
+    top: 46%;
+    background-color: #ffbc41;
+    border: none;
+    border-radius: 50px;
+    height: 48px;
+    width: 48px;
+    border: 1px solid black;
+  }
+  .right {
+    position: absolute;
+    right: 3%;
+    top: 46%;
+    background-color: #ffbc41;
+    border: none;
+    border-radius: 50px;
+    height: 48px;
+    width: 48px;
+    border: 1px solid black;
+  }
+  .picture {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .blockCarousel {
+    .CarouselMobile {
+      position: relative;
+      top: -42px;
+      display: block;
+    }
+
+    .CarouselDesktop {
+      display: grid;
+    }
+  }
+}

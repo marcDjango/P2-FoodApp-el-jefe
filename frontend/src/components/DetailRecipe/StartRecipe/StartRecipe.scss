@@ -1,0 +1,38 @@
+.main-btn-recipe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  :hover {
+    transform: scale(1.1);
+  }
+
+  .StartRecipe {
+    width: 40%;
+    background-color: #ffbc41;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    box-shadow: 0px 0px 3px 1px rgb(70, 70, 70);
+    margin-block: 12px;
+
+    a {
+      font-size: 24px;
+      text-align: center;
+      font-family: var(--primary-font);
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .main-btn-recipe {
+    .StartRecipe {
+      width: 50%;
+      a {
+        font-size: 40px;
+      }
+    }
+  }
+}

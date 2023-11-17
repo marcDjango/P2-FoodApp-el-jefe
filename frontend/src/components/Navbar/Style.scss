@@ -1,0 +1,129 @@
+nav {
+  z-index: 5;
+  position: fixed;
+  display: flex;
+  background-color: #fff9f3;
+  width: 100%;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 1rem;
+
+  button {
+    border: none;
+    background: none;
+    font: inherit;
+  }
+  .NavbarO {
+    display: none;
+  }
+  .Logo {
+    width: 70%;
+  }
+  .MenuBurgall {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    text-align: right;
+    .Listcat button {
+      padding-block: 10px;
+    }
+    .Listcat a {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-decoration: none;
+      padding-block: 10px;
+      color: black;
+    }
+    .Listcat li {
+      margin-block: 0.5rem;
+      font-size: 16px;
+    }
+    .NavCat {
+      list-style: none;
+      font-size: 46px;
+      border: 1px solid black;
+      padding-inline: 8px;
+      height: auto;
+      a {
+        font-size: 24px;
+      }
+    }
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+// -----------------------------------------------------------------
+//                             MEDIA QUERY
+// -----------------------------------------------------------------
+
+@media screen and (min-width: 600px) {
+  .CatButton {
+    color: white;
+  }
+  .NavBarOFixe {
+    background-color: #242323;
+    box-shadow: var(--border-shadow);
+  }
+  .NavbarOpen {
+    backdrop-filter: blur(2px);
+    box-shadow: var(--border-shadow);
+    align-items: center;
+    background: rgba(255, 255, 255, 0);
+  }
+  nav {
+    .NavbarO {
+      height: 3rem;
+      display: flex;
+      color: white;
+      li {
+        list-style: none;
+      }
+      div {
+        margin-inline: 1rem;
+
+        .Catedest {
+          display: flex;
+          width: 100%;
+          padding-top: 0.8rem;
+          text-align: right;
+          font-size: clamp(18px, 2vw, 28px);
+          gap: 1.5rem;
+          a {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            width: auto;
+            color: white;
+          }
+          button {
+            cursor: pointer;
+            font-size: clamp(18px, 2vw, 28px);
+          }
+
+          .Catesolo {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-right: 0px;
+            li {
+              background: rgba(0, 0, 0, 0.334);
+              padding: 16px;
+              padding-block: 0.5rem;
+              font-size: clamp(14px, 1.5vw, 20px);
+              color: white;
+            }
+          }
+          a {
+          }
+        }
+      }
+    }
+    .MenuBurgall {
+      display: none;
+    }
+  }
+}

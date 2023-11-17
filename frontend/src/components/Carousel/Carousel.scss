@@ -1,0 +1,31 @@
+.TitleCarousel {
+  display: none;
+}
+
+.CarouselGlobal {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
+  padding-inline: 8px;
+
+  .CarouselDesktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .TitleCarousel {
+    padding-top: 40px;
+    font-family: var(--tertiary-font);
+    font-size: 60px;
+    color: white;
+    padding-left: 16px;
+    display: block;
+  }
+  .CarouselGlobal {
+    display: grid;
+    margin-inline: 24px;
+    padding-top: 40px;
+    .CarouselDesktop {
+      display: block;
+    }
+  }
+}
