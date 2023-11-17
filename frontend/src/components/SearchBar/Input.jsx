@@ -53,7 +53,7 @@ export default function Input({ placeholder, value, onChange, locationHome }) {
   if (isFixed && windowWidth >= 600) {
     navbarStyle = {
       position: "fixed",
-      top: "1.8rem",
+      top: "3.8rem",
       backgroundColor: "#242323",
       marginTop: "18px",
     };
@@ -66,7 +66,7 @@ export default function Input({ placeholder, value, onChange, locationHome }) {
   } else if (isFixed && windowWidth <= 600) {
     navbarStyle = {
       position: "fixed",
-      top: "2.6rem",
+      top: "4.8rem",
       backgroundColor: "#fff9f3",
     };
   } else if (!isFixed && windowWidth <= 600) {

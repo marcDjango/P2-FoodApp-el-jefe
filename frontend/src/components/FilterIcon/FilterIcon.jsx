@@ -12,7 +12,7 @@ import MealType from "../ButtonFilter/MealType";
 import SetUpTime from "../ButtonFilter/SetUpTime";
 import CloseIcon from "../../assets/close-icon.svg";
 
-function FilterIcon() {
+function FilterIcon({ setIsOpen, isOpen }) {
   // HOOK (état, données) ----------------------------------------------
 
   // states
@@ -79,9 +79,15 @@ function FilterIcon() {
   // --------------------------------------------------------------
 
   return (
-    <div className="main-filter-container">
+    <div className={`main-filter-container ${isOpen && "open"}`}>
       <div className="main-icon-container">
-        <button type="button" className="close-btn">
+        <button
+          type="button"
+          className="close-btn"
+          onClick={() => {
+            setIsOpen(false);
+          }}
+        >
           <img src={CloseIcon} alt="close-icon" />
         </button>
       </div>

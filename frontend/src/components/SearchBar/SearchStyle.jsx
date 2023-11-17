@@ -10,7 +10,7 @@ function SearchStyle({ locationHome }) {
     const scrollYWindow = window.scrollY;
 
     if (
-      (scrollYWindow >= 190 && windowWidth > 600) ||
+      (scrollYWindow >= 163 && windowWidth > 600) ||
       (scrollYWindow >= 20 && windowWidth < 600 && locationHome) ||
       (scrollYWindow >= 180 && windowWidth < 600 && !locationHome)
     ) {
