@@ -173,13 +173,13 @@ function FilterIcon({ setIsOpen, isOpen }) {
       <div className="submitBtn">
         <Link
           className="custom-link"
-          to={`/filterecipe/${paramsValue ? paramsValue : ""}${
-            paramsValueAllergies ? paramsValueAllergies : ""
-          }${paramsValueDiets ? paramsValueDiets : ""}${
-            paramsValueNutri ? paramsValueNutri : ""
-          }${paramsValueMeal ? paramsValueMeal : ""}${
-            paramsValueTime ? paramsValueTime : ""
-          }`}
+          to={`/filterecipe/${
+            paramsValue ? paramsValue : "&cuisineType=french"
+          }${paramsValueAllergies ? paramsValueAllergies : ""}${
+            paramsValueDiets ? paramsValueDiets : ""
+          }${paramsValueNutri ? paramsValueNutri : ""}${
+            paramsValueMeal ? paramsValueMeal : ""
+          }${paramsValueTime ? paramsValueTime : ""}`}
         >
           <button type="button" onClick={clickSubmit}>
             SEARCH

@@ -20,9 +20,11 @@
   align-items: center;
   margin-left: 4rem;
   margin-bottom: 32px;
+  margin-top: 4rem;
   height: 68px;
   font-family: Poppins, sans-serif;
   font-weight: lighter;
   font-size: 32px;
   color: #fff;
+  text-transform: uppercase;
 }

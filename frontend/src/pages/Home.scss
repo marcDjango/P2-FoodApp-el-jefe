@@ -3,9 +3,29 @@
 
   .open-btn {
     position: absolute;
-    top: 2rem;
+    top: 2.5rem;
     right: 2.5rem;
     background: none;
     border: none;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/*                                         MEDIA QUERIES                                         */
+/* --------------------------------------------------------------------------------------------- */
+
+// --------------------- MEDIA QUERIES 480PX ---------------------
+
+@media screen and (max-width: 400px) {
+  .home-container {
+    position: relative;
+
+    .open-btn {
+      position: absolute;
+      top: 31rem;
+      right: 2.5rem;
+      background: none;
+      border: none;
+    }
   }
 }
