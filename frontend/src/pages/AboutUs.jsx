@@ -39,14 +39,13 @@ function AboutUs() {
             isClicked.Adrien ? "displayOn" : "displayOff"
           }`}
         >
-          Adrien, c'est le développeur web qui pourrait être confondu avec un
-          magicien. Sa capacité à transformer des lignes de code en sites web
-          époustouflants relève de l'art. Avec une élégance presque mystique, il
-          jongle avec HTML, CSS et JavaScript comme s'ils étaient les cartes
-          d'un jeu de tarot. Chaque projet est pour lui un défi, et il les
-          aborde avec une créativité débordante. Quand Adrien prend les rênes
-          d'un projet, on peut être sûr que le résultat sera magique, aussi bien
-          visuellement que techniquement.
+          Adrien is the web developer who could be mistaken for a magician. His
+          ability to transform lines of code into stunning websites is truly an
+          art. With an almost mystical elegance, he juggles HTML, CSS, and
+          JavaScript as if they were the cards of a tarot deck. Each project is
+          a challenge for him, and he approaches them with overflowing
+          creativity. When Adrien takes the reins of a project, you can be sure
+          that the result will be magical, both visually and technically.
         </p>
         <img
           className={`profil-icon ${
@@ -70,14 +69,13 @@ function AboutUs() {
             isClicked.Marcelo ? "displayOn" : "displayOff"
           }`}
         >
-          Marcelo, c'est le génie du backend. Il navigue dans les bases de
-          données et les serveurs avec une aisance déconcertante. Pour lui, la
-          sécurité et la stabilité sont les maîtres mots de tout développement
-          web. Il aime résoudre les problèmes complexes, que ce soit en
-          optimisant les requêtes SQL ou en mettant en place des systèmes de
-          sauvegarde impeccables. Marcelo est le gardien des données, veillant à
-          ce que tout fonctionne parfaitement en coulisses, permettant ainsi aux
-          utilisateurs de profiter d'une expérience web sans faille.
+          Marcelo is the genius of data management. He navigates databases and
+          servers with disarming ease. For him, security and stability are the
+          watchwords of any web development. He enjoys solving complex problems,
+          whether it's optimizing SQL queries or implementing flawless backup
+          systems. Marcelo is the guardian of data, ensuring that everything
+          runs seamlessly behind the scenes, allowing users to enjoy a seamless
+          web experience.
         </p>
         <img
           className={`profil-icon ${
@@ -101,16 +99,16 @@ function AboutUs() {
             isClicked.Theo ? "displayOn" : "displayOff"
           }`}
         >
-          Théo, chaman des quatre terres, druide de l’ancien monde, grand PO
-          suprême, concquérant des cinq royaumes, élu parmis les élus, artisan
-          du design web Il accorde une attention méticuleuse aux détails et
-          s'efforce de créer des interfaces utilisateur élégantes et intuitives.
-          Avec un sens aigu de l'esthétique, il jongle avec les palettes de
-          couleurs, les typographies et les éléments graphiques pour donner vie
-          à des sites web qui captivent l'œil. Chaque pixel est soigneusement
-          placé, et chaque transition est pensée avec minutie. Théo sait que la
-          beauté et la convivialité vont de pair, et il s'efforce de créer des
-          expériences web qui laissent une impression durable.
+          Théo, shaman of the four lands, druid of the old world, great PO
+          supreme, conqueror of the five kingdoms, chosen among the chosen,
+          artisan of web design He pays meticulous attention to details and
+          strives to create elegant and intuitive user interfaces. With a keen
+          sense of aesthetics, he juggles with palettes of colors, typographies
+          and graphic elements to bring life to websites that captivate the eye.
+          Every pixel is carefully placed, and each transition is carefully
+          thought out. Theo knows that beauty and friendliness go hand in hand,
+          and he strives to create web experiences that leave a lasting
+          impression.
         </p>
         <img
           className={`profil-icon ${

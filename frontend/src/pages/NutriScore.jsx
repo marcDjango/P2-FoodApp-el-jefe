@@ -6,57 +6,49 @@ function NutriScore() {
     <div className="main-div">
       <div className="text-container">
         <h2 className="text-title">
-          Un Système d'Étiquetage Nutritionnel qui Simplifie le Choix
-          Alimentaire
+          A Nutrition Labeling System That Simplifies Choice Eating
         </h2>
         <p className="text-description">
-          Les valeurs nutritionnelles jouent un rôle essentiel dans notre
-          compréhension de la qualité nutritionnelle des produits alimentaires.
-          Le Nutri-Score, par exemple, est un système d'étiquetage nutritionnel
-          qui utilise ces valeurs pour attribuer une note globale à un produit
-          alimentaire, facilitant ainsi la prise de décision des consommateurs.
-          En effet, le Nutri-Score met en évidence la valeur nutritionnelle d'un
-          produit de manière simple et visuelle, allant de la lettre A (vert)
-          pour les produits les plus sains à la lettre E (rouge) pour les moins
-          sains. Ce système aide les consommateurs à choisir des aliments plus
-          équilibrés et à opter pour des choix plus sains, en un coup d'œil sur
-          l'étiquette.
+          Nutritional values play an essential role in our understanding of the
+          nutritional quality of food products. Nutri-Score, for example, is a
+          nutritional labeling system which uses these values to assign an
+          overall rating to a product food, thus facilitating consumer
+          decision-making. Indeed, the Nutri-Score highlights the nutritional
+          value of a produced in a simple and visual way, going from the letter
+          A (green) for the healthiest products with the letter E (red) for the
+          least healthy. This system helps consumers choose foods more balanced
+          and opt for healthier choices, at a glance at the label.
         </p>
         <img className="text-line" src={Line} alt="line" />
       </div>
       <div className="text-container">
         <h2 className="text-title">
-          L'Évaluation des Valeurs Nutritionnelles dans le Nutri-Score
+          The Evaluation of Nutritional Values in the Nutri-Score
         </h2>
         <p className="text-description">
-          Le Nutri-Score prend en compte plusieurs valeurs nutritionnelles clés,
-          telles que les calories, les graisses saturées, les sucres, le sel,
-          les protéines, les fibres, ainsi que les pourcentages de la valeur
-          quotidienne (% VQ) de ces éléments. En combinant ces informations, le
-          Nutri-Score évalue la qualité nutritionnelle globale d'un aliment, en
-          prenant en compte les nutriments bénéfiques et les éléments à limiter.
-          Ce système d'étiquetage est devenu un outil précieux pour les
-          consommateurs soucieux de leur santé, les aidant à faire des choix
-          alimentaires plus éclairés dans un environnement où les informations
-          nutritionnelles peuvent parfois être complexes à interpréter.
+          The Nutri-Score takes into account several key nutritional values,
+          such as calories, saturated fats, sugars, salt, proteins, fibers, as
+          well as the percentages of the daily value (% DV) of these elements.
+          By combining this information, the Nutri-Score assesses the overall
+          nutritional quality of a food, considering both beneficial nutrients
+          and elements to limit. This labeling system has become a valuable tool
+          for health-conscious consumers, helping them make more informed
+          dietary choices in an environment where nutritional information can
+          sometimes be complex to interpret.
         </p>
         <img className="text-line" src={Line} alt="line" />
       </div>
       <div className="text-container">
-        <h2 className="text-title">
-          Un Outil Clé pour une Alimentation Plus Saine
-        </h2>
+        <h2 className="text-title">A Key Tool for a Healthier Diet</h2>
         <p className="text-description">
-          Le Nutri-Score est un exemple de la manière dont les valeurs
-          nutritionnelles sont mises en pratique pour promouvoir une
-          alimentation plus saine. Il contribue à sensibiliser les consommateurs
-          aux qualités nutritionnelles des produits alimentaires et encourage
-          les fabricants à améliorer la composition nutritionnelle de leurs
-          produits. En fin de compte, les valeurs nutritionnelles et le
-          Nutri-Score sont des outils puissants pour promouvoir la santé
-          publique en aidant les individus à faire des choix alimentaires plus
-          informés, favorisant ainsi une alimentation équilibrée et une
-          meilleure qualité de vie.
+          The Nutri-Score is an example of how values nutritional practices are
+          put into practice to promote healthy healthier diet. It helps raise
+          consumer awareness nutritional qualities of food products and
+          encourages manufacturers to improve the nutritional composition of
+          their products. Ultimately, the nutritional values and Nutri-Score are
+          powerful tools to promote health public by helping individuals make
+          better food choices informed, thus promoting a balanced diet and
+          better quality of life.
         </p>
         <img className="text-line" src={Line} alt="line" />
       </div>
