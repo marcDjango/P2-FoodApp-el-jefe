@@ -6,6 +6,7 @@ import Carbs from "../../../assets/images/Carbs.svg";
 import Sugar from "../../../assets/images/Sugar.svg";
 import Fiber from "../../../assets/images/Fiber.svg";
 import Protein from "../../../assets/images/Protein.svg";
+import Butter from "../../../assets/images/Butter.svg";
 import { useData } from "../../../services/Context";
 import AllNutrients from "./AllNutrients";
 import "./Nutrients.scss";
@@ -52,7 +53,7 @@ function Nutrients() {
       />
       <AllNutrients
         NameFood={data.totalNutrients.CHOLE}
-        NameImg={Cal}
+        NameImg={Butter}
         NameClassImg="CholesteroleImg"
       />
     </div>

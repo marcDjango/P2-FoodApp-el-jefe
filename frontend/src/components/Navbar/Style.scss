@@ -67,32 +67,40 @@ a {
   .CatButton {
     color: white;
   }
-
-  nav {
-    background: rgba(255, 255, 255, 0);
+  .NavBarOFixe {
+    background-color: #242323;
+    box-shadow: var(--border-shadow);
+  }
+  .NavbarOpen {
     backdrop-filter: blur(2px);
     box-shadow: var(--border-shadow);
     align-items: center;
-
-    li {
-      list-style: none;
-    }
+    background: rgba(255, 255, 255, 0);
+  }
+  nav {
     .NavbarO {
+      height: 3rem;
       display: flex;
       color: white;
+      li {
+        list-style: none;
+      }
       div {
         margin-inline: 1rem;
 
         .Catedest {
           display: flex;
+          padding-top: 0.8rem;
           text-align: right;
           font-size: clamp(18px, 2vw, 28px);
           gap: 1.5rem;
           a {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             width: auto;
             color: white;
           }
           button {
+            cursor: pointer;
             font-size: clamp(18px, 2vw, 28px);
           }
 

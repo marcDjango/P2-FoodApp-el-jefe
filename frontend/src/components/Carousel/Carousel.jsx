@@ -5,13 +5,17 @@ import "./Carousel.scss";
 function Carousel() {
   return (
     <>
-      <div className="CarouselDesktop">
-        <CarouselSelect mealType="breakfast" />
-        <CarouselSelect mealType="dinner" />
-        <CarouselSelect mealType="teatime" />
-      </div>
-      <div className="CarouselMobile">
-        <CarouselSelect mealType="lunch" />
+      <h1 className="TitleCarousel">COMPOSE YOUR MENU</h1>
+      <div className="CarouselGlobal">
+        <div className="CarouselDesktop">
+          <CarouselSelect mealType="breakfast" />
+        </div>
+        <div className="CarouselMobile">
+          <CarouselSelect mealType="lunch" />
+        </div>
+        <div className="CarouselDesktop">
+          <CarouselSelect mealType="teatime" />
+        </div>
       </div>
     </>
   );

@@ -1,14 +1,30 @@
-.CarouselDesktop {
+.TitleCarousel {
+  display: none;
+}
+
+.CarouselGlobal {
   grid-template-columns: repeat(3, 1fr);
   gap: 1%;
-  display: none;
   padding-inline: 8px;
-}
-@media screen and (min-width: 600px) {
-  .CarouselMobile {
+  padding-top: 40px;
+  .CarouselDesktop {
     display: none;
   }
-  .CarouselDesktop {
+}
+@media screen and (min-width: 600px) {
+  .TitleCarousel {
+    padding-top: 40px;
+    font-family: var(--tertiary-font);
+    font-size: 60px;
+    color: white;
+    padding-left: 16px;
+    display: block;
+  }
+  .CarouselGlobal {
     display: grid;
+    margin-inline: 24px;
+    .CarouselDesktop {
+      display: block;
+    }
   }
 }
