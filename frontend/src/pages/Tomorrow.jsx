@@ -8,17 +8,16 @@ function Tomorrow() {
   return (
     <div className="main-container-tomorrow">
       <div className="introduction">
-        <h1>Pensons à demain</h1>
+        <h1>Let's think about tomorrow</h1>
         <p>
-          Dans un monde en constante évolution, il est essentiel que nous
-          réfléchissions à notre façon de manger et à l'impact de nos choix
-          alimentaires sur l'avenir de notre planète. Les enjeux
-          environnementaux sont de plus en plus pressants, et notre alimentation
-          joue un rôle clé dans la préservation de la Terre. Dans cet article,
-          nous allons explorer la notion de "Pensons à Demain" dans le contexte
-          de la cuisine durable. Nous partagerons des recettes délicieuses et
-          respectueuses de l'environnement pour vous inspirer à faire des choix
-          alimentaires plus responsables.
+          In a constantly changing world, it is essential that we think about
+          the way we eat and the impact of our choices food on the future of our
+          planet. Challenges environmental issues are increasingly pressing, and
+          our food plays a key role in preserving the Earth. In this article, we
+          will explore the notion of “Let’s think about Tomorrow” in the context
+          sustainable cooking. We will share delicious recipes and
+          environmentally friendly to inspire you to make choices more
+          responsible food.
         </p>
       </div>
 
@@ -27,29 +26,26 @@ function Tomorrow() {
           <img src={Pic1} alt="vegetables" />
         </div>
         <div className="paragraph">
-          <h2>Manger Local et de Saison</h2>
+          <h2>Eating Local and Seasonal</h2>
           <p>
-            L'une des premières étapes pour penser à demain dans votre cuisine
-            est de privilégier les produits locaux et de saison. En optant pour
-            des aliments qui sont cultivés à proximité de chez vous et qui sont
-            récoltés au moment opportun, vous réduisez l'empreinte carbone
-            associée au transport des denrées alimentaires sur de longues
-            distances. Les légumes de saison sont non seulement plus frais et
-            savoureux, mais ils contribuent également à soutenir les
-            agriculteurs locaux.
+            One of the first steps to thinking about tomorrow in your kitchen is
+            to favor local and seasonal products. By opting for foods that are
+            grown near you and are harvested at the right time, you reduce the
+            carbon footprint associated with the transport of foodstuffs over
+            long distances. Seasonal vegetables are not only fresher and tasty,
+            but they also help support local farmers.
           </p>
         </div>
       </div>
 
       <div className="text-container">
         <div className="paragraph">
-          <h2>Réduire le Gaspillage Alimentaire</h2>
+          <h2>Reduce Food Waste</h2>
           <p>
-            Le gaspillage alimentaire est un problème majeur dans le monde
-            d'aujourd'hui. En réduisant le gaspillage dans votre cuisine, vous
-            contribuez à la préservation des ressources naturelles. Une astuce
-            simple consiste à planifier vos repas, à conserver les restes et à
-            être créatif avec les ingrédients que vous avez sous la main.
+            Food waste is a major problem worldwide of today. By reducing waste
+            in your kitchen, you contribute to the preservation of natural
+            resources. A tip simple is to plan your meals, save leftovers and be
+            creative with the ingredients you have on hand.
           </p>
         </div>
         <div id="pic">
@@ -62,13 +58,12 @@ function Tomorrow() {
           <img src={Pic3} alt="salade poke" />
         </div>
         <div className="paragraph">
-          <h2>Opter pour une Alimentation Végétarienne et Végétalienne</h2>
+          <h2>Opting for a Vegetarian and Vegan Diet</h2>
           <p>
-            La production de viande a un impact environnemental significatif en
-            termes d'utilisation de ressources et d'émissions de gaz à effet de
-            serre. En incorporant davantage de repas à base de plantes dans
-            votre alimentation, vous réduisez votre empreinte carbone et
-            contribuez à la préservation des écosystèmes.
+            Meat production has a significant environmental impact in terms of
+            resource use and gas emissions tight. By incorporating more
+            plant-based meals into your diet, you reduce your carbon footprint
+            and contribute to the preservation of ecosystems.
           </p>
         </div>
       </div>
@@ -91,14 +86,13 @@ function Tomorrow() {
 
       <div className="conclusion">
         <p>
-          Penser à demain, c'est adopter une approche durable de notre
-          alimentation. En faisant des choix conscients, comme manger local,
-          réduire le gaspillage alimentaire, opter pour une alimentation à base
-          de plantes et privilégier les aliments biologiques, nous pouvons
-          contribuer à un avenir meilleur pour notre planète. Ces recettes
-          délicieuses sont non seulement bonnes pour vous, mais aussi pour
-          l'environnement. Alors, mettez votre tablier et préparez-vous à
-          savourer un avenir plus vert et plus durable.
+          Thinking about tomorrow means adopting a sustainable approach to our
+          food. By making conscious choices, such as eating locally, reduce food
+          waste, opt for a diet based on plants and favor organic foods, we can
+          contribute to a better future for our planet. These recipes delicious
+          foods are not only good for you, but also for the environment. So, put
+          on your apron and get ready to enjoy a greener and more sustainable
+          future.
         </p>
       </div>
     </div>
