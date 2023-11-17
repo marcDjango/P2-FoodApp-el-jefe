@@ -21,15 +21,19 @@
       font-size: 1.5rem;
       font-weight: bold;
       line-height: 2.5rem;
+      color: white;
     }
 
     .text-description {
       font-size: 1rem;
       line-height: 2rem;
+      color: white;
     }
 
     .text-line {
       width: 60%;
+      background-color: bisque;
+      padding: 2px;
     }
   }
 }

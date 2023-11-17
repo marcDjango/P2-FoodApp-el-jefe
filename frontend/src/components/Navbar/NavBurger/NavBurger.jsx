@@ -84,15 +84,17 @@ function MenuBurger() {
                     </Link>
                   </li>
                 </ul>
-                <Link to="/AboutUs" onClick={toggleBurger}>
-                  About Us
-                </Link>
-                <Link to="/nutriscore" onClick={toggleBurger}>
-                  Nutri-score
-                </Link>
-                <Link to="/tomorrow" onClick={toggleBurger}>
-                  Think about
-                </Link>
+                <div className="nav-link-page">
+                  <Link to="/AboutUs" onClick={toggleBurger}>
+                    About Us
+                  </Link>
+                  <Link to="/nutriscore" onClick={toggleBurger}>
+                    Nutri-score
+                  </Link>
+                  <Link to="/tomorrow" onClick={toggleBurger}>
+                    Think about
+                  </Link>
+                </div>
               </div>
             )}
           </div>

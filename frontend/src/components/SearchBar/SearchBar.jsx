@@ -8,14 +8,12 @@ function SearchBar(locationHome) {
     setInputValue(e.target.value);
   };
   return (
-    <div>
-      <Input
-        value={inputValue}
-        onChange={handleOnchange}
-        placeholder="Search...."
-        locationHome={locationHome}
-      />
-    </div>
+    <Input
+      value={inputValue}
+      onChange={handleOnchange}
+      placeholder="Search...."
+      locationHome={locationHome}
+    />
   );
 }
 export default SearchBar;

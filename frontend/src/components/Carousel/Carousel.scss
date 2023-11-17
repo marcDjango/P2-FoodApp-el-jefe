@@ -6,7 +6,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1%;
   padding-inline: 8px;
-  padding-top: 40px;
+
   .CarouselDesktop {
     display: none;
   }
@@ -23,6 +23,7 @@
   .CarouselGlobal {
     display: grid;
     margin-inline: 24px;
+    padding-top: 40px;
     .CarouselDesktop {
       display: block;
     }
