@@ -70,13 +70,12 @@ function Tomorrow() {
 
       <div className="text-container">
         <div className="paragraph">
-          <h2>Privilégier les Aliments Biologiques</h2>
+          <h2>Favor Organic Foods</h2>
           <p>
-            Les aliments biologiques sont produits sans l'utilisation de
-            pesticides chimiques et d'engrais synthétiques, ce qui les rend plus
-            respectueux de l'environnement. En choisissant des produits
-            biologiques, vous soutenez une agriculture durable et préservez la
-            biodiversité.
+            Organic foods are produced without the use of chemical pesticides
+            and synthetic fertilizers, making them more eco-friendly. When
+            choosing products organic, you support sustainable agriculture and
+            preserve the biodiversity.
           </p>
         </div>
         <div id="pic">
