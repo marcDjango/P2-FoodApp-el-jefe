@@ -18,11 +18,14 @@ export default function SelectCategory({
 
   return (
     <>
-      <h2 className="title_filter">
-        {carousel
-          ? `${toUpperCaseFirstLetter(category)} Food`
-          : toUpperCaseFirstLetter(mealType)}
-      </h2>
+      <div>
+        <h2 className="title_filter">
+          {carousel
+            ? `${toUpperCaseFirstLetter(category)} Food`
+            : toUpperCaseFirstLetter(mealType)}
+        </h2>
+      </div>
+
       <div className={carousel ? "container_carousel" : "container_body"}>
         {apiDataCategory.recipesData &&
           apiDataCategory.recipesData.map((data) => (

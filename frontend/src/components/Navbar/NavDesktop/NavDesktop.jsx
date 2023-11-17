@@ -8,7 +8,6 @@ function DesktopNav() {
   const toggleCategory = () => {
     setCategoryOpen(!isCategoryOpen);
   };
-
   return (
     <div className="NavbarO" id="navBar-Desktop">
       <div>
