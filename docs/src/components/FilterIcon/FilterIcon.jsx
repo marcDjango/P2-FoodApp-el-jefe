@@ -66,7 +66,6 @@ function FilterIcon({ setIsOpen, isOpen }) {
       paramsValueTime
     )
       .then((data) => {
-        // console.log("iiii", data);
         return data;
       })
       .catch((error) => {

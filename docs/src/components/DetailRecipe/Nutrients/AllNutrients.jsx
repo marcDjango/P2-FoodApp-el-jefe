@@ -6,7 +6,7 @@ import "./Nutrients.scss";
 function AllNutrients({ NameFood, NameImg, NameClassImg }) {
   const { data } = useData();
   return (
-    <div className="BLockNutri">
+    <div className="BLockNutri" id="BLockNutri">
       <img className={NameClassImg} src={NameImg} alt={NameImg} />
       <div className="DivInfo">
         <div>{NameFood.label} </div>

@@ -44,18 +44,18 @@ export default function Input({ placeholder, value, onChange, locationHome }) {
   }
   let navbarStyle = {};
   const styleInput = {
-    top: "5px",
+    top: "8px",
     padding: "0",
     width: "60px",
-    transition: "width 1s ease-in-out",
+    transition: "width 0.3s ease-in-out",
   };
 
   if (isFixed && windowWidth >= 600) {
     navbarStyle = {
       position: "fixed",
-      top: "3.8rem",
+      top: "3rem",
       backgroundColor: "#242323",
-      marginTop: "18px",
+      marginTop: "15px",
     };
   } else if (!isFixed && windowWidth >= 600) {
     navbarStyle = {
@@ -63,21 +63,6 @@ export default function Input({ placeholder, value, onChange, locationHome }) {
       top: "50%",
       backgroundColor: "transparent",
     };
-  } else if (isFixed && windowWidth <= 600) {
-    navbarStyle = {
-      position: "fixed",
-      top: "4.8rem",
-      backgroundColor: "#fff9f3",
-    };
-  } else if (!isFixed && windowWidth <= 600) {
-    if (locationHome) {
-      navbarStyle = {
-        position: "absolute",
-        top: "50%",
-        backgroundColor: "transparent",
-        marginTop: "0",
-      };
-    }
   }
   const searchImage = windowWidth <= 600 ? SearchMobile : Search;
   const closeImage = windowWidth <= 600 ? CloseMobile : Close;
@@ -123,5 +108,5 @@ Input.propTypes = {
   placeholder: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  locationHome: PropTypes.bool.isRequired,
+  locationHome: PropTypes.bool,
 };

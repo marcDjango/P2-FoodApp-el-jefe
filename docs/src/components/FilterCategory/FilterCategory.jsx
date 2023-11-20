@@ -10,11 +10,12 @@ import {
 import "./FilterCategory.scss";
 
 export default function FilterCategory() {
+  const location = useLocation();
+
   const [filterActive, setFilterActive] = useState(-1);
   const [hoveredIndex, setHoveredIndex] = useState(-1);
   const navigationStyle = FilterStyle();
   const mealType = ["Breakfast", "Brunch", "Dinner", "Snack", "Teatime"];
-  const location = useLocation();
 
   useEffect(() => {
     // Vérifier si le chemin d'accès contient l'un des éléments de mealType

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import RefactorTitle from "../utils";
 
 import nutriscoreA from "../../assets/images/nutri-score-a.png";
-import "./card.scss";
 import { useData } from "../../services/Context";
+import "./card.scss";
 
 function Card({ data }) {
   const { setData } = useData();

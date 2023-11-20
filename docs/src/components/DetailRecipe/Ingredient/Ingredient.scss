@@ -61,20 +61,26 @@
     }
     .NumberPerson {
       .Moins {
+        // display: flex;
+        // align-items: center;
+        height: 1rem;
+        width: 1rem;
         margin-inline: 8px;
         background: #ffbc41;
-        border-radius: 15px;
+        border-radius: 50%;
         border: 1px solid black;
-        padding-inline: 4px;
+        // padding: auto;
         text-align: center;
         box-shadow: 0px 0px 0px 1px;
       }
       .Plus {
+        height: 1rem;
+        width: 1rem;
         margin-inline: 8px;
         background: #ffbc41;
-        border-radius: 15px;
+        border-radius: 50%;
         border: 1px solid black;
-        padding-inline: 4px;
+        // padding-inline: auto;
         text-align: center;
         box-shadow: 0px 0px 0px 1px;
       }

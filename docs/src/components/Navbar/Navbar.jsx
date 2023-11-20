@@ -1,10 +1,12 @@
 import "./Style.scss";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo.svg";
+import { useLocationEffect, useWindowWidth } from "../utils";
+import logo from "../../assets/images/Logo3.svg";
+import logoName from "../../assets/images/ELJEFE.png";
 import MenuBurger from "./NavBurger/NavBurger";
 import DesktopNav from "./NavDesktop/NavDesktop";
 import SearchStyle from "../SearchBar/SearchStyle";
-import { useLocationEffect, useWindowWidth } from "../utils";
+import SearchBar from "../SearchBar/SearchBar";
 
 function Navbar() {
   const { currentPath, isHome } = useLocationEffect("", false);
@@ -17,6 +19,7 @@ function Navbar() {
       <Link to="/">
         <img src={logo} className="Logo" alt={currentPath} />
       </Link>
+      {windowWidth <= 600 ? <SearchBar locationHome={isHome} /> : ""}
       <MenuBurger />
       <DesktopNav />
     </nav>

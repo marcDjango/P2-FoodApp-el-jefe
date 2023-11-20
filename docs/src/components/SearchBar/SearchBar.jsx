@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import Input from "./Input";
 
 function SearchBar(locationHome) {
@@ -16,4 +17,7 @@ function SearchBar(locationHome) {
     />
   );
 }
+Input.propTypes = {
+  locationHome: PropTypes.bool,
+};
 export default SearchBar;

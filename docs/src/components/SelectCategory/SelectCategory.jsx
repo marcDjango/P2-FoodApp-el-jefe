@@ -29,7 +29,7 @@ export default function SelectCategory({
       <div className={carousel ? "container_carousel" : "container_body"}>
         {apiDataCategory.recipesData &&
           apiDataCategory.recipesData.map((data) => (
-            <Card key={data.recipe.label} data={data.recipe} />
+            <Card key={data.recipe.label + data.recipe.ingredients} data={data.recipe} />
           ))}
       </div>
     </>
